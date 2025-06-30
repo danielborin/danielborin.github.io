@@ -46,7 +46,7 @@ permalink: /about/
   </li>
 </ul>
 
-<div style="margin-bottom: 5px;"></div>
+<div style="margin-bottom: 20px;"></div>
 
 
 ### Areas of Interest:
