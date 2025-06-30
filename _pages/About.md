@@ -1,8 +1,8 @@
 ---
-title: "About"
+title: "Home"
 layout: gridlay
 sitemap: false
-permalink: /about/
+permalink: /home/
 ---
 
 <style>
