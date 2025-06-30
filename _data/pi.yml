@@ -7,6 +7,8 @@
   orcid: https://orcid.org/0000-0002-4098-7730
   # ads: https://ui.adsabs.harvard.edu/search/q=%20author%3A%22Esseldeurs%22&sort=date%20desc%2C%20bibcode%20desc&p_=0
   scholar: https://scholar.google.com/citations?user=qa0TdZwAAAAJ&hl=pt-BR&oi=ao
+  arxiv: https://arxiv.org/search/?searchtype=author&query=Borin%2C+D
+  CV_lattes: https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K8627212P2
   # Change the number below to the number of "educations" you have (up to 6)
   number_educ: 4
   education1: "(2026) PhD Physics, São Paulo State University (UNESP)"
