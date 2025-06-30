@@ -26,21 +26,38 @@ permalink: /about/
 I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuven/)'s [Institute of Astronomy](https://fys.kuleuven.be/ster), in the team of [Prof. Dr. Leen Decin](https://fys.kuleuven.be/ster/staff/senior-staff/leen-decin). My research lies at the intersection of math, physics, and computer science, where I explore some of the most complex phenomena in the universe.
 
 
-<ul>
-{% set educations = [
-    member.education1,
-    member.education2,
-    member.education3,
-    member.education4,
-    member.education5,
-    member.education6,
-    member.education7
-] %}
+<ul style="overflow: hidden">
 
-{% for education in educations[:member.number_educ] %}
-  <li><i class="fas fa-graduation-cap"></i> {{ education }}</li>
-{% endfor %}
+  {% if member.number_educ >= 1 %}
+  <li><i class="fas fa-graduation-cap"></i> {{ member.education1 }}</li>
+  {% endif %}
+
+  {% if member.number_educ >= 2 %}
+  <li><i class="fas fa-graduation-cap"></i> {{ member.education2 }}</li>
+  {% endif %}
+
+  {% if member.number_educ >= 3 %}
+  <li><i class="fas fa-graduation-cap"></i> {{ member.education3 }}</li>
+  {% endif %}
+
+  {% if member.number_educ >= 4 %}
+  <li><i class="fas fa-graduation-cap"></i> {{ member.education4 }}</li>
+  {% endif %}
+
+  {% if member.number_educ >= 5 %}
+  <li><i class="fas fa-graduation-cap"></i> {{ member.education5 }}</li>
+  {% endif %}
+
+  {% if member.number_educ >= 6 %}
+  <li><i class="fas fa-graduation-cap"></i> {{ member.education6 }}</li>
+  {% endif %}
+
+  {% if member.number_educ >= 7 %}
+  <li><i class="fas fa-graduation-cap"></i> {{ member.education7 }}</li>
+  {% endif %}
+
 </ul>
+
 
 
 
