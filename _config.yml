@@ -68,7 +68,7 @@ scholar:
   style: citesty
   locale: en
 
-  source: /_bibliography/
+  source: /papers/
   bibliography: articles.bib
   bibliography_template: bibtemplate
   sort_by: year, month
