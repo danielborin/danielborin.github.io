@@ -51,7 +51,7 @@ permalink: /about/
 
 ### Areas of Interest:
 
-<ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-type: disc; padding-left: 20px; font-size: 1.05em;">>
+<ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-type: disc; padding-left: 20px; font-size: 1.05em;">
   <li style="margin-bottom: 6px;">Nonlinear dynamics and chaos</li>
   <li style="margin-bottom: 6px;">Hamiltonian systems</li>
   <li style="margin-bottom: 6px;">Mechanism of transport and diffusion</li>
