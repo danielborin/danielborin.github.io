@@ -8,7 +8,6 @@ years: [2022]
 
 <div class="jumbotron">
 
-### Publications
 {% bibliography -f articles %}
 
 </div>
