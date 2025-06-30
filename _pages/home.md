@@ -1,6 +1,6 @@
 ---
 title: "Home"
-layout: gridlay
+layout: default
 sitemap: false
 permalink: /
 ---
