@@ -25,60 +25,6 @@ permalink: /about/
 # Daniel Borin
 I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuven/)'s [Institute of Astronomy](https://fys.kuleuven.be/ster), in the team of [Prof. Dr. Leen Decin](https://fys.kuleuven.be/ster/staff/senior-staff/leen-decin). My research lies at the intersection of math, physics, and computer science, where I explore some of the most complex phenomena in the universe.
 
-
-<ul>
-
-  {% if member.number_educ == 1 %}
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 3 %}
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education3 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education3 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education4 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education3 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education4 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education5 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 6 %}
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education3 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education4 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education5 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education6 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 7 %}
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education3 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education4 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education5 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education6 }} </li>
-  <li><i class="fa fa-graduation-cap"></i> {{ member.education7 }} </li>
-  {% endif %}  
-
-</ul>
-
 <ul>
   <li><i class="fa-solid fa-graduation-cap"></i> (2026) PhD Physics, São Paulo State University (UNESP)</li>
   <li><i class="fa-solid fa-graduation-cap"></i> (2025) MS Mathematics, São Paulo State University (UNESP)</li>
@@ -90,14 +36,18 @@ I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuv
 
 <div style="display: flex; flex-wrap: wrap; max-width: 600px;">
   <div style="flex: 1 1 50%; box-sizing: border-box; padding-right: 10px;">
-    Nonlinear dynamics and chaos<br>
-    Hamiltonian systems<br>
-    Mechanism of transport and diffusion
+    <ul style="margin: 0; padding-left: 20px;">
+      <li>Nonlinear dynamics and chaos</li>
+      <li>Hamiltonian systems</li>
+      <li>Mechanism of transport and diffusion</li>
+    </ul>
   </div>
   <div style="flex: 1 1 50%; box-sizing: border-box; padding-left: 10px;">
-    Classical billiards<br>
-    Complex system<br>
-    Ecological/Biological Models
+    <ul style="margin: 0; padding-left: 20px;">
+      <li>Classical billiards</li>
+      <li>Complex system</li>
+      <li>Ecological/Biological Models</li>
+    </ul>
   </div>
 </div>
 
