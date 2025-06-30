@@ -36,7 +36,7 @@ permalink: /
   </li>
   <li style="margin-bottom: 10px;">
     <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2025) MS Mathematics, São Paulo State University (UNESP)
+    (2024) MS Mathematics, São Paulo State University (UNESP)
   </li>
   <li style="margin-bottom: 10px;">
     <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
