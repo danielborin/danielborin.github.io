@@ -22,6 +22,8 @@ permalink: /
 </figure>
 
 <div style="text-align:justify">
+<div style="margin-bottom: 20px;"></div>
+    
 # Daniel Borin
 <!-- I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuven/)'s [Institute of Astronomy](https://fys.kuleuven.be/ster), in the team of [Prof. Dr. Leen Decin](https://fys.kuleuven.be/ster/staff/senior-staff/leen-decin). My research lies at the intersection of math, physics, and computer science, where I explore some of the most complex phenomena in the universe. -->
 
