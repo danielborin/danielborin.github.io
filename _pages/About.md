@@ -19,6 +19,8 @@ permalink: /about/
   {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-3x"></i></a> {% endif %}
   {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-3x"></i></a> {% endif %}
   {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-3x"></i></a> {% endif %}
+  {% if member.arxiv %} <a href="{{ member.arxiv }}" target="_blank"><i class="ai ai-arxiv-square" style="font-size: 3em;"></i></a> {% endif %}
+  {% if member.CV_lattes %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-cv-square" style="font-size: 3em;"></i></a> {% endif %}
   <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
