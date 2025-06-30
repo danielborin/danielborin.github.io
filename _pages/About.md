@@ -28,33 +28,54 @@ I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuv
 
 <ul style="overflow: hidden">
 
-  {% if member.number_educ >= 1 %}
-  <li><i class="fas fa-graduation-cap"></i> {{ member.education1 }}</li>
+  {% if member.number_educ == 1 %}
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
   {% endif %}
 
-  {% if member.number_educ >= 2 %}
-  <li><i class="fas fa-graduation-cap"></i> {{ member.education2 }}</li>
+  {% if member.number_educ == 2 %}
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
   {% endif %}
 
-  {% if member.number_educ >= 3 %}
-  <li><i class="fas fa-graduation-cap"></i> {{ member.education3 }}</li>
+  {% if member.number_educ == 3 %}
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education3 }} </li>
   {% endif %}
 
-  {% if member.number_educ >= 4 %}
-  <li><i class="fas fa-graduation-cap"></i> {{ member.education4 }}</li>
+  {% if member.number_educ == 4 %}
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education3 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education4 }} </li>
   {% endif %}
 
-  {% if member.number_educ >= 5 %}
-  <li><i class="fas fa-graduation-cap"></i> {{ member.education5 }}</li>
+  {% if member.number_educ == 5 %}
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education3 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education4 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education5 }} </li>
   {% endif %}
 
-  {% if member.number_educ >= 6 %}
-  <li><i class="fas fa-graduation-cap"></i> {{ member.education6 }}</li>
+  {% if member.number_educ == 6 %}
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education3 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education4 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education5 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education6 }} </li>
   {% endif %}
 
-  {% if member.number_educ >= 7 %}
-  <li><i class="fas fa-graduation-cap"></i> {{ member.education7 }}</li>
-  {% endif %}
+  {% if member.number_educ == 7 %}
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education1 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education2 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education3 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education4 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education5 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education6 }} </li>
+  <li><i class="fa fa-graduation-cap"></i> {{ member.education7 }} </li>
+  {% endif %}  
 
 </ul>
 
