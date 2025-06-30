@@ -49,7 +49,7 @@ permalink: /
 <div style="margin-bottom: 20px;"></div>
 
 
-### Areas of Interest:
+### Areas of Interest
 
 <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-type: disc; padding-left: 20px; font-size: 1.05em;">
   <li style="margin-bottom: 6px;">Nonlinear dynamics and chaos</li>
