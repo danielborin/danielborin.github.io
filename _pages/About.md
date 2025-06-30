@@ -79,6 +79,13 @@ I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuv
 
 </ul>
 
+<ul>
+  <li><i class="fa-solid fa-graduation-cap"></i> (2026) PhD Physics, São Paulo State University (UNESP)</li>
+  <li><i class="fa-solid fa-graduation-cap"></i> (2025) MS Mathematics, São Paulo State University (UNESP)</li>
+  <li><i class="fa-solid fa-graduation-cap"></i> (2022) MS Physics, University of São Paulo (USP)</li>
+  <li><i class="fa-solid fa-graduation-cap"></i> (2019) BS Physics, São Paulo State University (UNESP)</li>
+</ul>
+
 ### Areas of Interest:
 
 <div style="display: flex; flex-wrap: wrap; max-width: 600px;">
