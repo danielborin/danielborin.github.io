@@ -30,7 +30,6 @@ contact: >
 # Pages shown in navbar
 nav_pages:
   - name: Publications
-  # - name: Talks
   - name: Research
   - name: Software
   - name: CV
