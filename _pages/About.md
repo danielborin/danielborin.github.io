@@ -5,96 +5,43 @@ sitemap: false
 permalink: /about/
 ---
 
-{% for member in site.data.pi %}
+<style>
+.jumbotron{
+    padding:3%;
+    padding-bottom:10px;
+    padding-top:10px;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+</style>
 
-<div class="row">
+
+<div id="homeid" class="col-sm-12 col-xs-12">
+<figure>
+  <img src="{{site.url}}{{site.baseurl}}/images/headshot.jpg" style="width:350px; min-width:30%; max-width:100%; margin-left:0px; margin-right:20px; margin-bottom:0px; margin-top:0px;" align="right">
+</figure>
+
+<div style="text-align:justify">
+## Daniel Borin
+
+<ul style="overflow: hidden">
+  {% for education in member.education %}
+    <li>
+      <i class="fa fa-graduation-cap" aria-hidden="true" style="margin-right: 6px;"></i>
+      {{ education | replace: "-", "&#8211;" }}
+    </li>
+  {% endfor %}
+</ul>
   
-  <img src="{{site.url}}{{site.baseurl}}/images/headshot.jpg" class="img-responsive" width="30%" style="float: left" />
-  <h3>{{ member.name }}</h3>
-  <i style="font-size:20px">{{ member.info }}</i><br>
+I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuven/)'s [Institute of Astronomy](https://fys.kuleuven.be/ster), in the team of [Prof. Dr. Leen Decin](https://fys.kuleuven.be/ster/staff/senior-staff/leen-decin). My research lies at the intersection of math, physics, and computer science, where I explore some of the most complex phenomena in the universe.
 
-  {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-3x"></i></a> {% endif %}
-  {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a> {% endif %}
-  {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i></a> {% endif %}
-  {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-3x"></i></a> {% endif %}
-  {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-3x"></i></a> {% endif %}
-  {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-3x"></i></a> {% endif %}
-  {% if member.arxiv %} <a href="{{ member.arxiv }}" target="_blank"><i class="ai ai-arxiv-square" style="font-size: 3em;"></i></a> {% endif %}
-  {% if member.CV_lattes %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-cv-square" style="font-size: 3em;"></i></a> {% endif %}
-  <ul style="overflow: hidden">
+My earlier research project involves developing efficient techniques for <b>approximating radiative transfer</b> in simulations of <b>3D fluid dynamics</b>. This is an exciting area of research because it has the potential to improve our understanding of a wide range of astrophysical processes, where I focus on the cool outflows of AGB stars. My collaborators on this project include [Dr. Frederik De Ceuster](https://freddeceuster.github.io/) at [KU Leuven](https://www.kuleuven.be/kuleuven/) and [Dr. Lionel Siess](http://www.astro.ulb.ac.be/~siess/) at [ULB](https://www.ulb.be/en/ulb-homepage).
 
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
+I'm also exploring the semi-analytical modeling of <b>tidal dissipation in binary systems</b>. This project aims to unravel the complex orbital evolution throughout a star's lifetime, which has important implications for instance in the formation and evolution of planetary systems. My collaborator on this project is [Dr. Stéphane Mathis](http://sfmathis.free.fr/Home.html) at [CEA Paris-Seclay](https://www.cea.fr/paris-saclay/Pages/Accueil.aspx).
 
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  {% endif %}
+Apart from my research, I am also passionate about sharing my knowledge with others. I strongly believe that it is important for researchers to share their knowledge and expertise with others, both within and outside of academia. Throughout my academic journey, I have gained valuable experience as a tutor in mathematics and physics, a teaching assistant at KU Leuven, and a supervisor of a Master's students thesis.
 
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  {% endif %}
+When I'm not working on my research, you can find me cycling in the beautiful Belgian countryside, listening to science fiction audiobooks, or watching nature documentaries. I also enjoy spending time with my friends and family, trying out new recipes in the kitchen, and enjoying the vibrant city Leuven.
 
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 6 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  <li> {{ member.education6 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 7 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  <li> {{ member.education6 }} </li>
-  <li> {{ member.education7 }} </li>
-  {% endif %}
-
-  </ul>
+Thanks for visiting my website, and please don't hesitate to get in touch if you have any questions or comments!
 </div>
-
-{% endfor %}
-
-## About me
-
-Dr. Ethan Pickering investigates chaotic systems of engineering interest that exhibit rare and extreme events. He is currently a postdoctoral associate in Mechanical Engineering at the Massachusetts Institute of Technology, working with Themis Sapsis and collaborating with numerous institutions that cover state of the art computational, experimental, and theoretical abilities.
-
-{% if site.data.awards %}
-## Awards
-
-{% for award in site.data.awards %}
-* {{ award.name }}
-{% endfor %}
-
-{% endif %}
-
-{% if site.data.grants %}
-## Grants
-
-{% for grant in site.data.grants %}
-* {{ grant.name }}
-{% endfor %}
-
-{% endif %}
