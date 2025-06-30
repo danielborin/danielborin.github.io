@@ -30,6 +30,7 @@
   --primary: #375a7f;
   --secondary: #444;
   --success: #00bc8c;
+  --success: #00bc8c;
   --info: #3498db;
   --warning: #f39c12;
   --danger: #e74c3c;
@@ -2245,7 +2246,8 @@ textarea.form-control {
   font-size: 0.825rem;
   line-height: 1.5;
   color: #fff;
-  background-color: rgba(0, 188, 140, 0.9);
+  // background-color: rgba(0, 188, 140, 0.9); Tentativa de trocar cor do botão
+  background-color: rgba(92, 164, 214, 0.9);
   border-radius: 0.25rem;
 }
 
@@ -2272,7 +2274,8 @@ textarea.form-control {
 
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #00bc8c;
-  box-shadow: 0 0 0 0.2rem rgba(0, 188, 140, 0.25);
+  // box-shadow: 0 0 0 0.2rem rgba(0, 188, 140, 0.25); Tentativa de trocar cor do botão
+  box-shadow: 0 0 0 0.2rem rgba(92, 164, 214, 0.9);
 }
 
 .was-validated select.form-control:valid, select.form-control.is-valid {
@@ -2293,7 +2296,9 @@ textarea.form-control {
 
 .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus {
   border-color: #00bc8c;
-  box-shadow: 0 0 0 0.2rem rgba(0, 188, 140, 0.25);
+  // box-shadow: 0 0 0 0.2rem rgba(0, 188, 140, 0.25); Tentativa de trocar cor do botão
+  box-shadow: 0 0 0 0.2rem rgba(92, 164, 214, 0.9);
+  
 }
 
 .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
@@ -2320,7 +2325,8 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(0, 188, 140, 0.25);
+  // box-shadow: 0 0 0 0.2rem rgba(0, 188, 140, 0.25); Tentativa de trocar o botão
+  box-shadow: 0 0 0 0.2rem rgba(92, 164, 214, 0.9);
 }
 
 .was-validated .custom-control-input:valid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-valid:focus:not(:checked) ~ .custom-control-label::before {
@@ -2333,7 +2339,8 @@ textarea.form-control {
 
 .was-validated .custom-file-input:valid:focus ~ .custom-file-label, .custom-file-input.is-valid:focus ~ .custom-file-label {
   border-color: #00bc8c;
-  box-shadow: 0 0 0 0.2rem rgba(0, 188, 140, 0.25);
+  // box-shadow: 0 0 0 0.2rem rgba(0, 188, 140, 0.25); Tentativa de trocar o botão
+  box-shadow: 0 0 0 0.2rem rgba(92, 164, 214, 0.9);
 }
 
 .invalid-feedback {
