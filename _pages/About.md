@@ -5,43 +5,93 @@ sitemap: false
 permalink: /about/
 ---
 
+<!-- Font Awesome (caso ainda não esteja no layout) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-.jumbotron{
-    padding:3%;
-    padding-bottom:10px;
-    padding-top:10px;
-    margin-top:10px;
-    margin-bottom:30px;
+.jumbotron {
+  padding: 3%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-photo {
+  flex: 0 0 350px;
+  max-width: 100%;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about-text {
+  flex: 1;
+  text-align: justify;
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.education-item i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #333;
 }
 </style>
 
+<div class="about-container">
+  <!-- Imagem à esquerda -->
+  <div class="about-photo">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/headshot.jpg" alt="Foto de Daniel Borin">
+  </div>
 
-<div id="homeid" class="col-sm-12 col-xs-12">
-<figure>
-  <img src="{{site.url}}{{site.baseurl}}/images/headshot.jpg" style="width:350px; min-width:30%; max-width:100%; margin-left:0px; margin-right:20px; margin-bottom:0px; margin-top:0px;" align="right">
-</figure>
+  <!-- Texto à direita -->
+  <div class="about-text">
+  ## Daniel Borin
 
-<div style="text-align:justify">
-## Daniel Borin
+  {% assign member = site.data.pi[0] %}
 
-<ul style="overflow: hidden">
-  {% for education in member.education %}
-    <li>
-      <i class="fa fa-graduation-cap" aria-hidden="true" style="margin-right: 6px;"></i>
-      {{ education | replace: "-", "&#8211;" }}
-    </li>
-  {% endfor %}
-</ul>
-  
-I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuven/)'s [Institute of Astronomy](https://fys.kuleuven.be/ster), in the team of [Prof. Dr. Leen Decin](https://fys.kuleuven.be/ster/staff/senior-staff/leen-decin). My research lies at the intersection of math, physics, and computer science, where I explore some of the most complex phenomena in the universe.
+  <ul class="education-list">
+    {% for i in (1..member.number_educ) %}
+      {% assign educ = member["education" | append: i ] %}
+      {% if educ %}
+        <li class="education-item">
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          <span>{{ educ | replace: "-", "&#8211;" }}</span>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-My earlier research project involves developing efficient techniques for <b>approximating radiative transfer</b> in simulations of <b>3D fluid dynamics</b>. This is an exciting area of research because it has the potential to improve our understanding of a wide range of astrophysical processes, where I focus on the cool outflows of AGB stars. My collaborators on this project include [Dr. Frederik De Ceuster](https://freddeceuster.github.io/) at [KU Leuven](https://www.kuleuven.be/kuleuven/) and [Dr. Lionel Siess](http://www.astro.ulb.ac.be/~siess/) at [ULB](https://www.ulb.be/en/ulb-homepage).
+  I'm Daniel Borin, a PhD student at [São Paulo State University (UNESP)](https://www2.unesp.br/), working at the intersection of physics, mathematics, and computational modeling. My research focuses on the development of efficient techniques for solving complex physical problems, with applications in astrophysics and theoretical physics.
 
-I'm also exploring the semi-analytical modeling of <b>tidal dissipation in binary systems</b>. This project aims to unravel the complex orbital evolution throughout a star's lifetime, which has important implications for instance in the formation and evolution of planetary systems. My collaborator on this project is [Dr. Stéphane Mathis](http://sfmathis.free.fr/Home.html) at [CEA Paris-Seclay](https://www.cea.fr/paris-saclay/Pages/Accueil.aspx).
+  My previous research has involved mathematical modeling of physical systems, including radiative transfer in 3D fluid dynamics and tidal dissipation in binary star systems. I also collaborate with researchers from USP, CEA Paris-Saclay, and other institutions.
 
-Apart from my research, I am also passionate about sharing my knowledge with others. I strongly believe that it is important for researchers to share their knowledge and expertise with others, both within and outside of academia. Throughout my academic journey, I have gained valuable experience as a tutor in mathematics and physics, a teaching assistant at KU Leuven, and a supervisor of a Master's students thesis.
+  Beyond my academic interests, I'm passionate about science communication and teaching. I have experience as a teaching assistant, tutor in mathematics and physics, and supervisor of undergraduate theses.
 
-When I'm not working on my research, you can find me cycling in the beautiful Belgian countryside, listening to science fiction audiobooks, or watching nature documentaries. I also enjoy spending time with my friends and family, trying out new recipes in the kitchen, and enjoying the vibrant city Leuven.
+  When I'm not working, I enjoy cycling, cooking, and exploring the natural beauty of Brazil.
 
-Thanks for visiting my website, and please don't hesitate to get in touch if you have any questions or comments!
+  Thank you for visiting my website — feel free to get in touch!
+  </div>
 </div>
