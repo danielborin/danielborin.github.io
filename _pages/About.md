@@ -21,9 +21,11 @@ permalink: /about/
   <img src="{{site.url}}{{site.baseurl}}/images/headshot.jpg" style="width:350px; min-width:30%; max-width:100%; margin-left:0px; margin-right:20px; margin-bottom:0px; margin-top:0px;" align="left">
 </figure>
 
-<div style="text-align:justify; font-size:1.05em;">
+<div style="text-align:justify">
 # Daniel Borin
 <!-- I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuven/)'s [Institute of Astronomy](https://fys.kuleuven.be/ster), in the team of [Prof. Dr. Leen Decin](https://fys.kuleuven.be/ster/staff/senior-staff/leen-decin). My research lies at the intersection of math, physics, and computer science, where I explore some of the most complex phenomena in the universe. -->
+
+<div style="margin-bottom: 20px;"></div>
 
 <ul style="list-style: none; padding-left: 0; font-size: 1.1em;">
   <li style="margin-bottom: 10px;">
@@ -47,7 +49,7 @@ permalink: /about/
 
 #### Areas of Interest:
 
-<ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-type: disc; padding-left: 20px;">
+<ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-type: disc; padding-left: 20px;"; font-size: 1.05em;">>
   <li style="margin-bottom: 6px;">Nonlinear dynamics and chaos</li>
   <li style="margin-bottom: 6px;">Hamiltonian systems</li>
   <li style="margin-bottom: 6px;">Mechanism of transport and diffusion</li>
