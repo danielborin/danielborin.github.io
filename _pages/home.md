@@ -2,7 +2,7 @@
 title: "Home"
 layout: gridlay
 sitemap: false
-permalink: /home/
+permalink: /
 ---
 
 <style>
