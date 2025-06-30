@@ -32,6 +32,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {% if member.orcid %} <a href="{{ member.orcid }}" target="_blank"><i class="ai ai-orcid-square" style="font-size: 3em;"></i></a> {% endif %}
         {% if member.ads %} <a href="{{ member.ads }}" target="_blank"><i class="ai ai-ads-square" style="font-size: 3em;"></i></a> {% endif %}
         {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square" style="font-size: 3em;"></i></a> {% endif %}
+        {% if member.arxiv %} <a href="{{ member.arxiv }}" target="_blank"><i class="ai ai-arxiv-square" style="font-size: 3em;"></i></a> {% endif %}
+        {% if member.CV_Lattes %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-cv-square" style="font-size: 3em;"></i></a> {% endif %}
         </div>
       {% endfor %}
       </ul>
