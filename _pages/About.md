@@ -26,30 +26,22 @@ permalink: /about/
 I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuven/)'s [Institute of Astronomy](https://fys.kuleuven.be/ster), in the team of [Prof. Dr. Leen Decin](https://fys.kuleuven.be/ster/staff/senior-staff/leen-decin). My research lies at the intersection of math, physics, and computer science, where I explore some of the most complex phenomena in the universe.
 
 <ul>
-  <li><i class="fa-solid fa-graduation-cap"></i> (2026) PhD Physics, São Paulo State University (UNESP)</li>
-  <li><i class="fa-solid fa-graduation-cap"></i> (2025) MS Mathematics, São Paulo State University (UNESP)</li>
-  <li><i class="fa-solid fa-graduation-cap"></i> (2022) MS Physics, University of São Paulo (USP)</li>
-  <li><i class="fa-solid fa-graduation-cap"></i> (2019) BS Physics, São Paulo State University (UNESP)</li>
+  <li><i class="fa fa-graduation-cap"></i> (2026) PhD Physics, São Paulo State University (UNESP)</li>
+  <li><i class="fa fa-graduation-cap"></i> (2025) MS Mathematics, São Paulo State University (UNESP)</li>
+  <li><i class="fa fa-graduation-cap"></i> (2022) MS Physics, University of São Paulo (USP)</li>
+  <li><i class="fa fa-graduation-cap"></i> (2019) BS Physics, São Paulo State University (UNESP)</li>
 </ul>
 
 ### Areas of Interest:
 
-<div style="display: flex; flex-wrap: wrap; max-width: 600px;">
-  <div style="flex: 1 1 50%; box-sizing: border-box; padding-right: 10px;">
-    <ul style="margin: 0; padding-left: 20px;">
-      <li>Nonlinear dynamics and chaos</li>
-      <li>Hamiltonian systems</li>
-      <li>Mechanism of transport and diffusion</li>
-    </ul>
-  </div>
-  <div style="flex: 1 1 50%; box-sizing: border-box; padding-left: 10px;">
-    <ul style="margin: 0; padding-left: 20px;">
-      <li>Classical billiards</li>
-      <li>Complex system</li>
-      <li>Ecological/Biological Models</li>
-    </ul>
-  </div>
-</div>
+<ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-type: disc; padding-left: 20px;">
+  <li>Nonlinear dynamics and chaos</li>
+  <li>Hamiltonian systems</li>
+  <li>Mechanism of transport and diffusion</li>
+  <li>Classical billiards</li>
+  <li>Complex system</li>
+  <li>Ecological/Biological Models</li>
+</ul>
 
 
 </div>
