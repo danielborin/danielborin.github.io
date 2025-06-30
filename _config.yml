@@ -1,31 +1,31 @@
 # Site settings
-title: Mats Esseldeurs
-email: mats.esseldeurs@kuleuven.be
-description: Academic webpage of Mats Esseldeurs
+title: Daniel Borin
+email: daniel.borin[at]unesp.br
+description: Academic webpage of Daniel Borin
 baseurl: ""
-url: "https://MatsEsseldeurs.github.io"
+url: "https://danielborin.github.io"
 
 # Google analytics ID: Uncomment and your own, if you like
-google_analytics_4: G-PEJNCDJHLV
-google_search_console: cCnvBw3B25-aYTQkN247kUWhsP884LMFu2ge4UXqiq0
+# google_analytics_4: G-PEJNCDJHLV
+# google_search_console: cCnvBw3B25-aYTQkN247kUWhsP884LMFu2ge4UXqiq0
 # google_analytics_4: XXX
 # google_tag_manager: XXX
 
 # Footer info
 affiliation: >
-    Mats Esseldeurs<br/>
-    PhD in Astronomy<br/>
-    Institute of Astronomy,<br/>
-    KU Leuven
+    Daniel Borin<br/>
+    # PhD in Astronomy<br/>
+    # Institute of Astronomy,<br/>
+    # KU Leuven
 
 location: >
-  Institute of Astronomy,<br/> KU Leuven<br/>
-  Celestijnenlaan 200d - 03.38<br/>
-  3001 Heverlee, Belgium
+  São Paulo State University (UNESP)<br/>
+  Institute of Geosciences and Exact Sciences<br/>
+  Department of Physics<br/> 
+  13506-900, Rio Claro, SP, Brazil
 
 contact: >
-    <a href="mailto:mats.esseldeurs@kuleuven.be" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Mats via email</a> <br/>
-    <a href="https://github.com/MatsEsseldeurs/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+    <a href="mailto:daniel.borin[at]unesp.br" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Mats via email</a>
 
 # Pages shown in navbar
 nav_pages:
@@ -62,7 +62,7 @@ plugins: ["jekyll/scholar"]
 scholar:
 
   last_name: Esseldeurs
-  first_name: [Mats, M.]
+  first_name: [Borin, D.]
 
   style: citesty
   locale: en
