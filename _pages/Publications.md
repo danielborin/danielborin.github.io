@@ -6,6 +6,9 @@ permalink: /publications/
 years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
 ---
 
+{% assign total_pubs = site.data.publist | size %}
+{% assign countdown = total_pubs %}
+
 <div style="margin-bottom: 20px;"></div>
 
 For a complete list of publications, check
