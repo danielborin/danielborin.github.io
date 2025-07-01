@@ -26,7 +26,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <ul class="navbar-nav ml-auto">
       {% for member in site.data.pi %}
         <div>
-        {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square" style="font-size: 3em; color: white; text-shadow: 0 0 20px #303030;"></i></a> {% endif %}
+        {% if member.email %} <a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square" style="font-size: 3em; color: white; text-shadow: 0 0 20px #303030;"
+        onmouseover="this.style.filter='brightness(70%)'" onmouseout="this.style.filter='none'"></i></a>{% endif %}
         {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square" style="font-size: 3em; color: cyan;"></i></a> {% endif %}
         {% if member.LinkedIn %} <a href="{{ member.LinkedIn }}" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 3em; color: #303030;"></i></a> {% endif %}
         {% if member.orcid %} <a href="{{ member.orcid }}" target="_blank"><i class="ai ai-orcid-square" style="font-size: 3em; color: white; text-shadow: 0 0 20px #303030;"></i></a> {% endif %}
