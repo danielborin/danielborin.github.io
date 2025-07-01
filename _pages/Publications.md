@@ -13,9 +13,17 @@ years: [2023, 2024, 2025]
 
 <div style="margin-bottom: 20px;"></div>
 
-For a complete list of publications, check
+<!-- For a complete list of publications, check
 <a href="https://orcid.org/0000-0002-4098-7730" target="_blank"><button class="btn-bib"><i class="ai ai-orcid" aria-hidden="true"></i> ORCID </button></a>, or
-<a href="https://scholar.google.com/citations?user=qa0TdZwAAAAJ&hl=pt-BR&oi=ao" target="_blank"><button class="btn-arxiv"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar </button></a>
+<a href="https://scholar.google.com/citations?user=qa0TdZwAAAAJ&hl=pt-BR&oi=ao" target="_blank"><button class="btn-arxiv"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar </button></a> -->
+
+For a complete list of publications, check
+<a href="https://orcid.org/0000-0002-4098-7730" target="_blank" class="btn-bib">
+  <i class="ai ai-orcid" aria-hidden="true"></i> ORCID
+</a>, or
+<a href="https://scholar.google.com/citations?user=qa0TdZwAAAAJ&hl=pt-BR&oi=ao" target="_blank" class="btn-arxiv">
+  <i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar
+</a>
 
 ---
 
