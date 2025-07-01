@@ -61,15 +61,20 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 
 <div class="jumbotron" style="position: relative; overflow: hidden; z-index: 1;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/anime/demonslayer_bg.png') center/cover no-repeat; opacity: 0.5; z-index: -1; mix-blend-mode: multiply;"></div>
-<div class="col-md-12 col-sm-12" style="text-align:justify; overflow: hidden;">
-<h4>Demon Slayer</h4>
-<h5>Kimetsu no Yaiba</h5>
-<figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
-<img src="{{site.url}}{{site.baseurl}}/images/anime/demonslayer.jpg" style="width: 100%; max-width: 400px; height: auto;" alt="Your Lie in April poster"/>
-</figure>
-<em>TV Show (Ongoing)</em><br>
-<em>Summary:</em> A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.<br><br>
-<em>My Rating:</em> 8/10 <br>
-<em>My Thoughts:</em> This is another show that doesn't really have much plot (it's got a bit more than <em>Solo Leveling</em>, but not much). However, it does again make up for it quite well with visuals and the soundtrack. The fight scenes are really eye-catching, and it has decent enough worldbuilding. The characters are all really shallow, but they're all likeable, and it's a nice feel-good show with a couple sad moments sprinkled in here and there. Some of the episodes can be kind of a drag, so you can definitely skip/skim through the show and just thoroughly watch the ones with flashy fight scenes, which is what I tend to do.<br>
-</div>
+
+<div class="well-sm">
+<ul class="flex-container">
+<li class="flex-item1">
+  {% if publi.image %}
+   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="200%" style="float: left" />
+  {% endif %}
+</li>
+<li class="flex-item2">
+  <h4>Solo Leveling</h4>
+  <em>Summary:</em> Follows the adventures of Sung Jinwoo in a world that is constantly threatened by monsters and evil forces. In his battles Sung transforms himself from the weakest hunter of all mankind to one of the strongest hunters in existence.<br><br>
+
+</li>
+</ul>
+
+</div>  
 </div>
