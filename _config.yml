@@ -25,7 +25,7 @@ contact: >
 
 # Pages shown in navbar
 nav_pages:
-  # - name: About
+  - name: About
   - name: Publications
   - name: Research
   - name: Software
