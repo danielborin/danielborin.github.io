@@ -65,7 +65,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 <div class="col-md-12 col-sm-12" style="text-align:justify; overflow: hidden;">
 
 <figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
-<a href="{{site.url}}{{site.baseurl}}/lecture_notes/Teaching/Calculo 1 - NotaAula - Prof Daniel Borin.pdf" target="_blank">
+<a href="{{site.url}}{{site.baseurl}}/lecture_notes/Calculo 1 - NotaAula - Prof Daniel Borin.pdf" target="_blank">
   <img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_wbg.png"
        alt="ICC Logo"
        style="width: 100%; max-width: 400px; height: auto; transition: transform 0.3s ease;"
@@ -75,7 +75,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 </figure>
 
 <h4>
-  <a href="{{site.url}}{{site.baseurl}}/lecture_notes/Teaching/Calculo 1 - NotaAula - Prof Daniel Borin.pdf" target="_blank">
+  <a href="{{site.url}}{{site.baseurl}}/lecture_notes/Calculo 1 - NotaAula - Prof Daniel Borin.pdf" target="_blank">
     Cálculo I
   </a>
 </h4>
