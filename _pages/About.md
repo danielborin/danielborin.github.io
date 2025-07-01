@@ -5,61 +5,106 @@ sitemap: false
 permalink: /about/
 ---
 
-<style>
-.jumbotron{
-    padding:3%;
-    padding-bottom:10px;
-    padding-top:10px;
-    margin-top:10px;
-    margin-bottom:30px;
-}
-</style>
+<br><br>
 
+For a complete list of publications, check
+<a href="https://orcid.org/0000-0002-4098-7730">
+  <button class="btn-bib"><i class="ai ai-orcid" aria-hidden="true"></i> ORCID</button>
+</a>, or
+<a href="https://scholar.google.com/citations?user=qa0TdZwAAAAJ&hl=pt-BR&oi=ao">
+  <button class="btn-arxiv"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</button>
+</a>
 
-<div id="homeid" class="col-sm-12 col-xs-12">
-<figure>
-  <img src="{{site.url}}{{site.baseurl}}/images/headshot.jpg" style="width:350px; min-width:30%; max-width:100%; margin-left:0px; margin-right:20px; margin-bottom:0px; margin-top:0px;" align="left">
-</figure>
+---
 
-<div style="text-align:justify">
-# Daniel Borin
-<!-- I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuven/)'s [Institute of Astronomy](https://fys.kuleuven.be/ster), in the team of [Prof. Dr. Leen Decin](https://fys.kuleuven.be/ster/staff/senior-staff/leen-decin). My research lies at the intersection of math, physics, and computer science, where I explore some of the most complex phenomena in the universe. -->
-
-<div style="margin-bottom: 20px;"></div>
-
-<ul style="list-style: none; padding-left: 0; font-size: 1.1em;">
-  <li style="margin-bottom: 10px;">
-    <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2026) PhD Physics, São Paulo State University (UNESP)
-  </li>
-  <li style="margin-bottom: 10px;">
-    <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2025) MS Mathematics, São Paulo State University (UNESP)
-  </li>
-  <li style="margin-bottom: 10px;">
-    <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2022) MS Physics, University of São Paulo (USP)
-  </li>
-  <li style="margin-bottom: 10px;">
-    <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2019) BS Physics, São Paulo State University (UNESP)
-  </li>
+<ul style="list-style: none; padding: 0; margin: 0; font-size: 1.2em;">
+  {% for myyear in page.years %}
+    <li style="display: inline-block; width: 12.5%; padding: 6px 0; text-align: center;">
+      <a href="#year-{{ myyear }}" style="text-decoration: none;">{{ myyear }}</a>
+    </li>
+  {% endfor %}
 </ul>
 
-<div style="margin-bottom: 20px;"></div>
+{% assign publist_sorted = site.data.publist | sort: "year" | reverse %}
 
+{% for myyear in page.years %}
+  {% assign year_has_pubs = false %}
+  {% for publi in publist_sorted %}
+    {% if publi.year == myyear %}
+      {% assign year_has_pubs = true %}
+    {% endif %}
+  {% endfor %}
 
-### Areas of Interest:
+  {% if year_has_pubs %}
+  <h2 id="year-{{ myyear }}">{{ myyear }}</h2>
+  <ol class="publist" style="padding-left: 20px; font-size: 1.05em;">
+    {% for publi in publist_sorted %}
+      {% if publi.year == myyear %}
 
-<ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-type: disc; padding-left: 20px; font-size: 1.05em;">
-  <li style="margin-bottom: 6px;">Nonlinear dynamics and chaos</li>
-  <li style="margin-bottom: 6px;">Hamiltonian systems</li>
-  <li style="margin-bottom: 6px;">Mechanism of transport and diffusion</li>
-  <li style="margin-bottom: 6px;">Classical billiards</li>
-  <li style="margin-bottom: 6px;">Complex system</li>
-  <li style="margin-bottom: 6px;">Ecological/Biological Models</li>
-</ul>
+      {% assign bibtest = false %}
+      {% if publi.url %}
+        {% assign bibfile = "/papers/" | append: publi.url | append: ".txt" %}
+        {% for file in site.static_files %}
+          {% if file.path contains bibfile %}
+            {% assign bibtest = true %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
 
+      <li style="margin-bottom: 20px;">
+        <div class="flex-container">
+          {% if publi.image %}
+            <div class="flex-item1">
+              <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="200%" style="float: left;" />
+            </div>
+          {% endif %}
+          <div class="flex-item2">
+            <strong>{{ publi.title }}</strong><br />
+            <em>{{ publi.authors }}</em><br />
+            {{ publi.display }} ({{ publi.year }})<br />
 
+            {% if publi.url %}
+              <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank">
+                <button class="btn-pdf">PDF</button>
+              </a>
+            {% endif %}
+            {% if publi.doi %}
+              <a href="http://dx.doi.org/{{ publi.doi }}" target="_blank">
+                <button class="btn-doi">DOI</button>
+              </a>
+            {% endif %}
+            {% if publi.arxiv %}
+              <a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank">
+                <button class="btn-arxiv">ARXIV</button>
+              </a>
+            {% endif %}
+            {% if bibtest %}
+              <a data-toggle="collapse" href="#{{publi.url}}2" class="btn-bib" role="button">BIB</a>
+            {% endif %}
+            {% if publi.abstract %}
+              <a data-toggle="collapse" href="#{{publi.url}}" class="btn-abstract" role="button">ABSTRACT</a>
+            {% endif %}
 
-</div>
+            {% if publi.abstract %}
+            <br/>
+            <div class="collapse" id="{{publi.url}}">
+              <div class="well-abstract">{{ publi.abstract }}</div>
+            </div>
+            {% endif %}
+
+            {% if bibtest %}
+            <div class="collapse" id="{{publi.url}}2">
+              <div class="well-bib">
+                <iframe src="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.txt" scrolling="yes" width="100%" height="210" frameborder="0"></iframe>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+  {% endif %}
+{% endfor %}
+
