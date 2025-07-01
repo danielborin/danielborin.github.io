@@ -80,7 +80,7 @@ For a complete list of publications, check
    <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="200%" style="float: left" />
   {% endif %}
 </li> -->
-<li class="flex-item1" style="position: relative; padding-left: 50px; margin-bottom: -10px;">
+<li class="flex-item1" style="position: relative; padding-left: 45px; margin-bottom: -10px;">
 <span style="position: absolute; left: 0; top: 0; font-weight:bold; font-size: 1.1em;">[{{ countdown }}]</span>
 
   <strong> {{ publi.title }}</strong> <br />
