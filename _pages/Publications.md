@@ -100,8 +100,9 @@ For a complete list of publications, check
 
 {% if bibtest == true %}
 <div class="collapse" id="{{publi.url}}2"><div class="well-bib">
-<iframe src='{{site.url}}{{site.baseurl}}/papers/{{publi.url}}.txt' scrolling='yes' width="100%" height="210" frameborder='0'></iframe>
-</div></div> -->
+<iframe src='{{site.url}}{{site.baseurl}}/papers/{{publi.url}}.txt' scrolling='yes' width="100%" height="210" frameborder='0'></iframe>  -->
+
+</div></div>
 {% endif %}
 
 </li>
