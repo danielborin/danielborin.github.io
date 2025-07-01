@@ -26,13 +26,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <ul class="navbar-nav ml-auto">
       {% for member in site.data.pi %}
         <div>
-        {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square" style="font-size: 3em; color: white;"></i></a> {% endif %}
+        {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square" style="font-size: 3em; color: white; text-shadow: 0 0 5px #303030;"></i></a> {% endif %}
         {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square" style="font-size: 3em; color: cyan;"></i></a> {% endif %}
         {% if member.LinkedIn %} <a href="{{ member.LinkedIn }}" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 3em; color: #303030;"></i></a> {% endif %}
-        {% if member.orcid %} <a href="{{ member.orcid }}" target="_blank"><i class="ai ai-orcid-square" style="font-size: 3em; color: white"></i></a> {% endif %}
+        {% if member.orcid %} <a href="{{ member.orcid }}" target="_blank"><i class="ai ai-orcid-square" style="font-size: 3em; color: white; text-shadow: 0 0 5px #303030;"></i></a> {% endif %}
         {% if member.ads %} <a href="{{ member.ads }}" target="_blank"><i class="ai ai-ads-square" style="font-size: 3em;"></i></a> {% endif %}
-        {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square" style="font-size: 3em; color:white;"></i></a> {% endif %}
-        {% if member.arxiv %} <a href="{{ member.arxiv }}" target="_blank"><i class="ai ai-arxiv-square" style="font-size: 3em; color: white; text-shadow: 0 0 3px #00bc8c;"></i></a> {% endif %}
+        {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square" style="font-size: 3em; color:white; text-shadow: 0 0 5px #303030;"></i></a> {% endif %}
+        {% if member.arxiv %} <a href="{{ member.arxiv }}" target="_blank"><i class="ai ai-arxiv-square" style="font-size: 3em; color: white; text-shadow: 0 0 5px #303030;"></i></a> {% endif %}
         {% if member.CV_lattes %} <a href="{{ member.CV_lattes }}" target="_blank"><i class="ai ai-lattes-square" style="font-size: 3em; color: white; text-shadow: 0 0 5px #303030;""></i></a> {% endif %}
         </div>
       {% endfor %}
