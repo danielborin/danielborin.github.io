@@ -33,13 +33,13 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 </a>
 </figure>
 <!-- Ícone de relógio com texto -->
-<div style="display: flex; align-items: center; margin-bottom: 1em;">
-  <i class="fa fa-clock-o" style="font-size: 2em; margin-right: 10px;"></i>
+<div style="display: flex; align-items: center; margin-bottom: 0.3em;">
+  <i class="fa fa-clock-o" style="font-size: 1.5em; margin-right: 10px;"></i>
   <span style="font-size: 1.2em;">60 h</span>
 </div>
 
 <!-- Título Sumário (Outline) -->
-<h3>Sumário <span style="font-weight: normal;">(Outline)</span></h3>
+<h7>Sumário <span style="font-weight: normal;">(Outline)</span></h7>
 
 <!-- Lista de conteúdos -->
 <ul>
