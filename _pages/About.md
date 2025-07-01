@@ -81,7 +81,7 @@ For a complete list of publications, check
   {% endif %}
 </li> -->
 <li class="flex-item1">
-  <span style="font-weight:bold; font-size: 1.3em; margin-right: 10px;">{{ [ countdown ] }}.</span>
+  <span style="font-weight:bold; font-size: 1.3em; margin-right: 10px;">{{ countdown }}.</span>
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
   {{ publi.display }} {% if publi.year %}({{publi.year}}){% endif %}<br/>
