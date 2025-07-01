@@ -70,13 +70,15 @@ For a complete list of publications, check
 {% endif %}
 
 <div class="well-sm">
-<ul class="flex-container">
-<li class="flex-item1">
+<ul class="flex-container" style="list-style: none; padding-left: 0;">
+<!-- <li class="flex-item1">
   {% if publi.image %}
    <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="200%" style="float: left" />
   {% endif %}
-</li>
-<li class="flex-item2">
+</li> -->
+<li class="flex-item1" style="position: relative; padding-left: 45px; margin-bottom: -10px;">
+<span style="position: absolute; left: 0; top: 0; font-weight:bold; font-size: 1.1em;">[{{ countdown }}]</span>
+  
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
   {{ publi.display }} {% if publi.year %}({{publi.year}}){% endif %}<br/>
@@ -100,6 +102,7 @@ For a complete list of publications, check
 {% endif %}
 
 </li>
+{% assign countdown = countdown | minus: 1 %}
 </ul>
 
 </div>
