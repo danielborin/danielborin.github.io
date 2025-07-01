@@ -57,54 +57,57 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 </div>
 </div>
 
-<div class="jumbotron" style="position: relative; overflow: hidden; z-index: 1;">
-<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/anime/yourlieinapril_bg.jpg') center/cover no-repeat; opacity: 0.5; z-index: -1; mix-blend-mode: multiply;"></div>
-<div class="col-md-12 col-sm-12" style="text-align:justify; overflow: hidden;">
-<h4>Your Lie in April</h4>
-<h5>Shigatsu wa Kimi no Uso</h5>
-<figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
-<img src="{{site.url}}{{site.baseurl}}/images/anime/yourlieinapril.jpg" style="width: 100%; max-width: 400px; height: auto;" alt="Your Lie in April poster"/>
-</figure>
-<em>TV Show (22 episodes)</em><br>
-<em>Summary:</em> A piano prodigy who lost his ability to play after suffering a traumatic event in his childhood is forced back into the spotlight by an eccentric girl with a secret of her own.<br><br>
-<em>My Rating:</em> 10/10 <br>
-<em>My Thoughts:</em> This is definitely my favorite anime TV show of all time. I watched it at the start of high school, and I've never been able to watch it since then. It's really moving but also really gut-wrenching, and that makes it into an amazing show that hits you really hard once that you can never watch again due to how hard it hits you the first time. Like <em>A Silent Voice</em>, the characters have a lot of depth, and since we get to see them over the course of 22 episodes, they do get to be fleshed out a bit more. Other than the plot, the anime also has really nice visuals, and since it centers around music, it has a beautiful soundtrack that complements the emotion the plot delivers quite well. I strongly recommend this anime to anyone, but come prepared to tear up!<br>
-</div>
-</div>
-
+---
 
 <div class="jumbotron" style="position: relative; overflow: hidden; z-index: 1;">
-<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/anime/sololeveling_cropped_bg.jpg') center/cover no-repeat; opacity: 0.8; z-index: -1; mix-blend-mode: multiply;"></div>
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/Teaching/image_ICC.png') center/cover no-repeat; opacity: 0.5; z-index: -1; mix-blend-mode: multiply;"></div>
 
 <div class="col-md-12 col-sm-12" style="text-align:justify; overflow: hidden;">
-<h4>Solo Leveling</h4>
-<h5>Ore dake Level Up na Ken</h5>
+
 <figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
-<img src="{{site.url}}{{site.baseurl}}/images/anime/sololeveling.webp" style="width: 100%; max-width: 400px; height: auto;" alt="Solo Leveling Season 2 poster"/>
+<a href="{{site.url}}{{site.baseurl}}/lecture_notes/Teaching/Calculo 1 - NotaAula - Prof Daniel Borin.pdf" target="_blank">
+  <img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_wbg.png"
+       alt="ICC Logo"
+       style="width: 100%; max-width: 400px; height: auto; transition: transform 0.3s ease;"
+       onmouseover="this.style.transform='scale(0.95)'"
+       onmouseout="this.style.transform='scale(1)'"/>
+</a>
 </figure>
-<em>TV Show (Ongoing)</em><br>
-<em>Summary:</em> Follows the adventures of Sung Jinwoo in a world that is constantly threatened by monsters and evil forces. In his battles Sung transforms himself from the weakest hunter of all mankind to one of the strongest hunters in existence.<br><br>
-<em>My Rating:</em> 8.5/10 <br>
-<em>My Thoughts:</em> If you want any plot, this anime doesn't have any. It's purely a power fantasy centered around eye-catching fights, but it's a really well done power fantasy. The visuals are amazing, the soundtrack is really good, the mechanics and worldbuilding are done well enough such that they don't detract from the anime. I think it's a testament to how good it is given that it manages to rank this high in my list without any plot at all. Sometimes, it's just nice to just completely turn off my brain and watch something with no plot at all.<br>
+
+<h4>
+  <a href="{{site.url}}{{site.baseurl}}/lecture_notes/Teaching/Calculo 1 - NotaAula - Prof Daniel Borin.pdf" target="_blank">
+    Cálculo I
+  </a>
+</h4>
+<h5>Calculus I</h5>
+
+<!-- Ícone de relógio com texto -->
+<div style="display: flex; align-items: center; margin-bottom: 0.1em;">
+  <i class="fa fa-clock-o" style="font-size: 1.5em; margin-right: 10px;"></i>
+  <span style="font-size: 1.2em;">60 h</span>
 </div>
-</div>
 
-<div class="jumbotron" style="position: relative; overflow: hidden; z-index: 1;">
-<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/anime/demonslayer_bg.png') center/cover no-repeat; opacity: 0.5; z-index: -1; mix-blend-mode: multiply;"></div>
+<div style="margin-bottom: -10px;"></div>
+<!-- Título Sumário (Outline) -->
+<h7>Sumário <span style="font-weight: normal;">(Outline)</span></h7>
 
-<div class="well-sm">
-<ul class="flex-container">
-<li class="flex-item1">
-  {% if publi.image %}
-   <img src="{{ site.url }}{{ site.baseurl }}/images/Teaching/image_ICC.png" class="img-responsive" width="200%" style="float: left" />
-  {% endif %}
-</li>
-<li class="flex-item2">
-  <h4>Solo Leveling</h4>
-  <em>Summary:</em> Follows the adventures of Sung Jinwoo in a world that is constantly threatened by monsters and evil forces. In his battles Sung transforms himself from the weakest hunter of all mankind to one of the strongest hunters in existence.<br><br>
-
-</li>
+<!-- Lista de conteúdos -->
+<ul>
+  <li>Revisão de Matemática Básica <span style="font-weight: normal;">(Basic Math Review)</span></li>
+  <li>Conjuntos Numéricos, Intervalos, Inequações <span style="font-weight: normal;">(Number Sets, Intervals, Inequalities)</span></li>
+  <li>Estudo de Funções <span style="font-weight: normal;">(Study of Functions)</span></li>
+  <li>Limite <span style="font-weight: normal;">(Limits)</span></li>
+  <li>Derivada de uma Função <span style="font-weight: normal;">(Derivative of a Function)</span></li>
+  <li>Regra de L'Hospital <span style="font-weight: normal;">(L'Hospital's Rule)</span></li>
+  <li>Teoremas de Weierstrass, Valor Intermediário, Bolzano, Rolle e Valor Médio
+    <span style="font-weight: normal;">(Weierstrass, Intermediate Value, Bolzano, Rolle and Mean Value Theorems)</span>
+  </li>
+  <li>Crescimento e Decrescimento de Funções <span style="font-weight: normal;">(Increasing and Decreasing Functions)</span></li>
+  <li>Concavidade e Ponto de Inflexão <span style="font-weight: normal;">(Concavity and Inflection Point)</span></li>
+  <li>Máximos, Mínimos e Pontos Críticos <span style="font-weight: normal;">(Maximums, Minimums, and Critical Points)</span></li>
+  <li>Problemas de Otimização <span style="font-weight: normal;">(Optimization Problems)</span></li>
 </ul>
 
-</div>  
+
+</div>
 </div>
