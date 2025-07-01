@@ -32,6 +32,10 @@ These are some lecture notes from courses I have taught. The notes are in Portug
        onmouseout="this.style.transform='scale(1)'"/>
 </a>
 </figure>
+<li style="margin-bottom: 10px;">
+  <i class="fa fa-clock" style="margin-right: 8px;"></i>
+  60 h
+</li>
 <em>Movie</em><br>
 <em>Summary:</em> A deaf girl, Shoko, is bullied by the popular Shoya. As Shoya continues to bully Shoko, the class turns its back on him. Shoko transfers and Shoya grows up as an outcast. Alone and depressed, the regretful Shoya finds Shoko to make amends.<br><br>
 <em>My Rating:</em> 10/10 <br>
