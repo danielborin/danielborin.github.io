@@ -3,6 +3,7 @@ title: "Publications"
 layout: gridlay
 sitemap: false
 permalink: /publications/
+years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
 ---
 
 For a complete list of publications, check
@@ -25,8 +26,8 @@ For a complete list of publications, check
 {% endif %} -->
 
 
-{% for myyear in site.data.years %}
-[{{ myyear.year }}](#year-{{ myyear.year }})
+{% for myyear in page.years %}
+[{{ myyear }}](#year-{{ myyear }})&nbsp;&nbsp;
 {% endfor %}
 
 
