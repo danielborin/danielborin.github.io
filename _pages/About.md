@@ -9,6 +9,20 @@ years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
 {% assign total_pubs = site.data.publist | size %}
 {% assign countdown = total_pubs %}
 
+.flex-container {
+  list-style: none; /* remove os bullets padrão */
+  padding-left: 0;
+}
+
+.flex-item1 .pub-number {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-right: 10px;
+  width: 2em;           /* largura fixa para alinhamento */
+  text-align: right;
+}
+
 <div style="margin-bottom: 20px;"></div>
 
 For a complete list of publications, check
@@ -81,7 +95,7 @@ For a complete list of publications, check
   {% endif %}
 </li> -->
 <li class="flex-item1">
-  <span class="pub-number">{{ countdown }}</span>
+  <span class="pub-number">{{ [ countdown ] }}</span>
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
   {{ publi.display }} {% if publi.year %}({{publi.year}}){% endif %}<br/>
