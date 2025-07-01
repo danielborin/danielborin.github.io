@@ -74,7 +74,7 @@ For a complete list of publications, check
 {% endfor %}
 {% endif %}
 
-{% assign highlighted_name = '<span style="color: #2a9fd6;">' | append: me | append: '</span>' %}
+{% assign highlighted_name = '<span style="color: #2a9fd6; font-weight: bold;">' | append: me | append: '</span>' %}
 {% assign highlighted_authors = publi.authors | replace: me, highlighted_name %}
 
 
