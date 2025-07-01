@@ -1,6 +1,6 @@
   - title: Asymptotic convergence for the dynamics of a Duffing-like oscillator under scaling analyses
   authors: A. L. P. Livorati, A. P. Faber, and D. Borin
-  # url: something
+  url: Borin07
   # image: something.png
   display: Chaos <b>35</b>, 013108
   year: 2025
@@ -10,7 +10,7 @@
 
   - title: Hurst exponent: A method for characterizing dynamical traps
   authors: D. Borin
-  # url: something
+  url: Borin06
   # image: something.png
   display: Physical Review E <b>110</b>, 064227
   year: 2024
@@ -20,7 +20,7 @@
 
   - title: An investigation of escape and scaling properties of a billiard system
   authors: M. Rolim Sales, D. Borin, D. R. da Costa, J. D. Szezech Jr., and E. D. Leonel
-  # url: something
+  url: Borin05
   # image: something.png
   display: Chaos <b>34</b>, 113122
   year: 2024
@@ -30,7 +30,7 @@
 
   - title: Buzz pollination: A theoretical analysis via scaling invariance
   authors: D. Borin, V. L. G. de Brito, E. D. Leonel, and M. Hansen
-  # url: something
+  url: Borin04
   # image: something.png
   display: Physical Review E <b>110</b>, 054201
   year: 2024
@@ -40,7 +40,7 @@
 
   - title: Ratchet current and scaling properties in a nontwist mapping
   authors: M. Rolim Sales, D. Borin, L. C. de Souza, J. D. Szezech Jr., R. L. Viana, I. L. Caldas, and E. D. Leonel
-  # url: something
+  url: Borin03
   # image: something.png
   display: Chaos, Solitons & Fractals <b>189</b>, 115614
   year: 2024
@@ -50,7 +50,7 @@
 
   - title: Caputo fractional standard map: Scaling invariance analyses
   authors: D. Borin
-  # url: something
+  url: Borin02
   # image: something.png
   display: Chaos, Solitons & Fractals <b>181</b>, 114597
   year: 2024
@@ -60,7 +60,7 @@
 
   - title: An investigation of the survival probability for chaotic diffusion in a family of discrete Hamiltonian mappings
   authors: D. Borin, A. L. P. Livoratti and E. D. Leonel
-  # url: something
+  url: Borin01
   # image: something.png
   display: Chaos, Solitons & Fractals <b>175</b>, 113965
   year: 2023
