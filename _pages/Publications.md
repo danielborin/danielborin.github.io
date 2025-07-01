@@ -25,13 +25,9 @@ For a complete list of publications, check
 {% endif %} -->
 
 
-<!-- years' indice -->
-<div class="year-index">
-  {% for myyear in site.data.years %}
-    <a href="#year-{{ myyear.year }}" class="btn-year">{{ myyear.year }}</a>
-  {% endfor %}
-</div>
-<br/>
+{% for myyear in site.data.years %}
+[{{ myyear.year }}](#year-{{ myyear.year }})
+{% endfor %}
 
 
 {% for myyear in site.data.years %}
@@ -45,7 +41,7 @@ For a complete list of publications, check
 
 {% if site.group_pub_by_year == true %}
   {% if yeartest == true %}
-    <h2 id="year-{{ myyear.year }}">{{ myyear.year }}</h2>
+## {{ myyear.year }} {#year-{{ myyear.year }}}
   {% endif %}
 {% endif %}
 
