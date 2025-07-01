@@ -26,6 +26,15 @@ For a complete list of publications, check
 
 {% for myyear in page.years %}[{{ myyear }}](#year-{{ myyear }}) {% endfor %}
 
+<ul style="list-style: none; padding: 0; margin: 0; font-size: 1.2em;">
+  {% for myyear in page.years %}
+    <li style="display: inline-block; width: 12.5%; padding: 6px 0; text-align: center;">
+      <a href="#year-{{ myyear }}" style="text-decoration: none; color: #333;">{{ myyear }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
 
 
 {% for myyear in site.data.years %}
