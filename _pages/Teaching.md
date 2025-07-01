@@ -102,7 +102,8 @@ These are some lecture notes from courses I have taught. The notes are in Portug
   <li>Teoremas de Weierstrass, Valor Intermediário, Bolzano, Rolle e Valor Médio <br>
     <span style="font-weight: normal;">(Weierstrass, Intermediate Value, Bolzano, Rolle and Mean Value Theorems)</span>
   </li>
-  <li>Crescimento, Decrescimento, Concavidade e Ponto de Inflexão de Funções <span style="font-weight: normal;">(Increasing, Decreasing, Concavity and Inflection Point of Functions)</span></li>
+  <li>Crescimento e Decrescimento de Funções <span style="font-weight: normal;">(Increasing and Decreasing Functions)</span></li>
+  <li>Concavidade e Ponto de Inflexão <span style="font-weight: normal;">(Concavity and Inflection Point)</span></li>
   <li>Máximos, Mínimos e Pontos Críticos <span style="font-weight: normal;">(Maximums, Minimums, and Critical Points)</span></li>
   <li>Problemas de Otimização <span style="font-weight: normal;">(Optimization Problems)</span></li>
 </ul>
