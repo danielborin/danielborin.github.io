@@ -31,6 +31,9 @@ nav_pages:
   - name: Software
   # - name: CV
 
+# Do you want to group your publications by year? {true/false}
+group_pub_by_year: true
+
 include:
   - .htaccess
   - _pages
