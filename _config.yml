@@ -60,7 +60,6 @@ kramdown:
 
 plugins:
   - jekyll/scholar
-  - jekyll-seo-tag
 
 scholar:
 
