@@ -1,8 +1,8 @@
 ---
-title: "anime"
+title: "Teaching"
 layout: gridlay
 sitemap: true
-permalink: /anime.html
+permalink: /teaching/
 ---
 
 <div class="jumbotron">
