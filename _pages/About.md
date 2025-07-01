@@ -80,10 +80,9 @@ For a complete list of publications, check
    <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="200%" style="float: left" />
   {% endif %}
 </li> -->
-<li class="flex-item1" style="display: flex; align-items: flex-start;>
-  <span style="min-width: 50px; font-weight:bold; font-size: 1.2em; margin-right: 10px;">[{{ countdown }}].</span>
+<li class="flex-item1" style="position: relative; padding-left: 60px; margin-bottom: 20px;">
+<span style="position: absolute; left: 0; top: 0; font-weight:bold; font-size: 1.1em;">[{{ countdown }}]</span>
 
-  <div>
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ publi.authors }} </em><br />
   {{ publi.display }} {% if publi.year %}({{publi.year}}){% endif %}<br/>
@@ -107,7 +106,7 @@ For a complete list of publications, check
 
 {% endif %}
 
-</div>
+
 </li>
 {% assign countdown = countdown | minus: 1 %}
 </ul>
