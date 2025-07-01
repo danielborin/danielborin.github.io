@@ -60,13 +60,13 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 ---
 
 <div class="jumbotron" style="position: relative; overflow: hidden; z-index: 1;">
-<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/Teaching/image_ICC.png') center/cover no-repeat; opacity: 0.5; z-index: -1; mix-blend-mode: multiply;"></div>
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/Teaching/calculus-on-blackboard.jpg') center/cover no-repeat; opacity: 0.5; z-index: -1; mix-blend-mode: multiply;"></div>
 
 <div class="col-md-12 col-sm-12" style="text-align:justify; overflow: hidden;">
 
 <figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
 <a href="{{site.url}}{{site.baseurl}}/lecture_notes/Calculo 1 - NotaAula - Prof Daniel Borin.pdf" target="_blank">
-  <img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_wbg.png"
+  <img src="{{site.url}}{{site.baseurl}}/images/Teaching/calculus_logo.png"
        alt="ICC Logo"
        style="width: 100%; max-width: 400px; height: auto; transition: transform 0.3s ease;"
        onmouseover="this.style.transform='scale(0.95)'"
