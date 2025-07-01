@@ -5,11 +5,11 @@ sitemap: true
 permalink: /teaching/
 ---
 
-<div class="jumbotron">
+
 <div class="col-md-12 col-sm-12" style="text-align:justify">
-These are some anime that I'd recommend and my thoughts on them. All the summaries are spoiler-free, and I've hidden any spoilers that I discuss in my thoughts. If you have any recommendations for me based on this list, please message me on Instagram and let me know! I believe we don't need to follow each other to send and receive messages.
+These are some lecture notes from courses I have taught. The notes are in Portuguese, as the courses were delivered in that language. While the material is not complete or fully polished, it may still be useful for students or anyone interested in the topics covered.
 </div>
-</div>
+
 
 <div class="jumbotron" style="position: relative; overflow: hidden; z-index: 1;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/Teaching/image_ICC.png') center/cover no-repeat; opacity: 0.5; z-index: -1; mix-blend-mode: multiply;"></div>
