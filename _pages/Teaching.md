@@ -22,10 +22,9 @@ These are some lecture notes from courses I have taught. The notes are in Portug
     Introdução à Computação Científica (ICC) com Python
   </a>
 </h4>
-#### [Introdução à Computação Científica (ICC) com Python](https://danielborin.github.io/ICC)
 <h5>Introduction to Python for Scientific Computing</h5>
 <figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
-<a href="https://danielborin.github.io/ICC">
+<a href="https://danielborin.github.io/ICC" target="_blank">
   <img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_alone.png"
        alt="ICC Logo"
        style="width: 100%; max-width: 400px; height: auto; transition: transform 0.3s ease;"
@@ -33,10 +32,24 @@ These are some lecture notes from courses I have taught. The notes are in Portug
        onmouseout="this.style.transform='scale(1)'"/>
 </a>
 </figure>
-<li style="margin-bottom: 10px;">
-  <i class="fa fa-clock" style="margin-right: 8px;"></i>
-  60 h
-</li>
+<!-- Ícone de relógio com texto -->
+<div style="display: flex; align-items: center; margin-bottom: 1em;">
+  <i class="fa fa-clock-o" style="font-size: 2em; margin-right: 10px;"></i>
+  <span style="font-size: 1.2em;">60 h</span>
+</div>
+
+<!-- Título Sumário (Outline) -->
+<h3>Sumário <span style="font-weight: normal;">(Outline)</span></h3>
+
+<!-- Lista de conteúdos -->
+<ul>
+  <li>Básico do Python <span style="font-weight: normal;">(Python Basics)</span></li>
+  <li>Arrays: Conhecendo o Numpy <span style="font-weight: normal;">(Arrays: Getting to Know Numpy)</span></li>
+  <li>Gerando Gráficos com o Matplotlib <span style="font-weight: normal;">(Creating Plots with Matplotlib)</span></li>
+  <li>Resolvendo Expressões Matemáticas Analíticamente com o Sympy <span style="font-weight: normal;">(Solving Math Expressions Analytically with Sympy)</span></li>
+  <li>Scipy: Utilizando Métodos Númericos no Python <span style="font-weight: normal;">(Scipy: Using Numerical Methods in Python)</span></li>
+</ul>
+
 <em>Movie</em><br>
 <em>Summary:</em> A deaf girl, Shoko, is bullied by the popular Shoya. As Shoya continues to bully Shoko, the class turns its back on him. Shoko transfers and Shoya grows up as an outcast. Alone and depressed, the regretful Shoya finds Shoko to make amends.<br><br>
 <em>My Rating:</em> 10/10 <br>
