@@ -77,8 +77,6 @@ For a complete list of publications, check
 {% assign highlighted_name = '<span style="color: #2a9fd6; font-weight: bold;">' | append: me | append: '</span>' %}
 {% assign highlighted_authors = publi.authors | replace: me, highlighted_name %}
 
-
-<div class="jumbotron">
 <div class="well-sm">
 <ul class="flex-container" style="list-style: none; padding-left: 0;">
 <!-- <li class="flex-item1">
@@ -88,13 +86,13 @@ For a complete list of publications, check
 </li> -->
 <li class="flex-item1" style="position: relative; padding-left: 45px; margin-bottom: -10px;">
 <span style="position: absolute; left: 0; top: 0; font-weight:bold; font-size: 1.1em;">[{{ countdown }}]</span>
-
+  
   <strong> {{ publi.title }}</strong> <br />
   <em>{{ highlighted_authors }}</em><br />
   {{ publi.display }} {% if publi.year %}({{publi.year}}){% endif %}<br/>
   {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
   {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
-<!--   {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
+  <!-- {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
   {% if bibtest == true %} <a data-toggle="collapse" href="#{{publi.url}}2" class="btn-bib" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}2">BIB</a> {% endif %}
   {% if publi.abstract %} <a data-toggle="collapse" href="#{{publi.url}}" class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}">ABSTRACT</a>{% endif %} -->
 
@@ -110,15 +108,12 @@ For a complete list of publications, check
 <iframe src='{{site.url}}{{site.baseurl}}/papers/{{publi.url}}.txt' scrolling='yes' width="100%" height="210" frameborder='0'></iframe>
 
 </div></div>
-
 {% endif %}
-
 
 </li>
 {% assign countdown = countdown | minus: 1 %}
 </ul>
 
-</div>
 </div>
 {% endif %}
 {% endfor %}
