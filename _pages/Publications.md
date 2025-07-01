@@ -91,7 +91,7 @@ For a complete list of publications, check
   {% if bibtest == true %} <a data-toggle="collapse" href="#{{publi.url}}2" class="btn-bib" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}2">BIB</a> {% endif %}
   {% if publi.abstract %} <a data-toggle="collapse" href="#{{publi.url}}" class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}">ABSTRACT</a>{% endif %}
 
-<!-- {% if publi.abstract %}
+{% if publi.abstract %}
 <br/>
 <div class="collapse" id="{{publi.url}}"><div class="well-abstract">
  {{publi.abstract}}
@@ -100,7 +100,7 @@ For a complete list of publications, check
 
 {% if bibtest == true %}
 <div class="collapse" id="{{publi.url}}2"><div class="well-bib">
-<iframe src='{{site.url}}{{site.baseurl}}/papers/{{publi.url}}.txt' scrolling='yes' width="100%" height="210" frameborder='0'></iframe>  -->
+<iframe src='{{site.url}}{{site.baseurl}}/papers/{{publi.url}}.txt' scrolling='yes' width="100%" height="210" frameborder='0'></iframe>
 
 </div></div>
 {% endif %}
