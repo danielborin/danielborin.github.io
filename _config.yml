@@ -27,8 +27,9 @@ contact: >
 nav_pages:
   # - name: About
   - name: Publications
-  - name: Research
-  - name: Software
+  - name: Teaching
+  # - name: Research
+  # - name: Software
   # - name: CV
 
 # Do you want to group your publications by year? {true/false}
