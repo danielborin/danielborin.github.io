@@ -14,91 +14,81 @@ For a complete list of publications, check
 
 ---
 
-{% assign publist_sorted = site.data.publist | sort: "year" | reverse %}
-{% assign total_pubs = publist_sorted | size %}
-{% assign contador = total_pubs %}
-{% assign last_year = "" %}
+<div style="margin-bottom: -20px;"></div>
 
-{% for publi in publist_sorted %}
+<ul style="list-style: none; padding: 0; margin: 0; font-size: 1.2em;">
+  {% for myyear in page.years %}
+    <li style="display: inline-block; width: 12.5%; padding: 6px 0; text-align: center;">
+      <a href="#year-{{ myyear }}" style="text-decoration: none;">{{ myyear }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
-  {% if publi.year != last_year %}
-    {% if forloop.index != 1 %}
-      </div>
+{% for myyear in site.data.years %}
+
+  {% assign yeartest = false %}
+  {% for publi in site.data.publist %}
+    {% if publi.year == myyear.year %}
+      {% assign yeartest = true %}
     {% endif %}
-    <h2 id="year-{{ publi.year }}">{{ publi.year }}</h2>
-    <div style="margin-bottom: 30px;">
-    {% assign last_year = publi.year %}
+  {% endfor %}
+
+  {% if site.group_pub_by_year == true %}
+    {% if yeartest == true %}
+## {{ myyear.year }} {#year-{{ myyear.year }}}
+    {% endif %}
   {% endif %}
 
-  {% assign bibtest = false %}
-  {% if publi.url %}
-    {% assign bibfile = "/papers/" | append: publi.url | append: ".txt" %}
-    {% for file in site.static_files %}
-      {% if file.path contains bibfile %}
-        {% assign bibtest = true %}
+  {% for publi in site.data.publist %}
+    {% if publi.year == myyear.year %}
+
+      {% assign bibtest = false %}
+      {% if publi.url %}
+        {% assign bibfile = "/papers/" | append:  publi.url  | append: ".txt" %}
+        {% for file in site.static_files %}
+          {% if file.path contains bibfile %}
+            {% assign bibtest = true %}
+          {% endif %}
+        {% endfor %}
       {% endif %}
-    {% endfor %}
-  {% endif %}
 
-  <div class="well-sm" style="margin-bottom: 15px;">
-    <ul class="flex-container" style="list-style: none; padding-left: 0; margin: 0;">
-      <li class="flex-item1" style="margin-right: 15px;">
-        {% if publi.image %}
-          <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="200%" style="float: left;" />
-        {% endif %}
-      </li>
-      <li class="flex-item2" style="flex-grow: 1;">
-        <span style="font-weight: bold; font-size: 1.2em; margin-right: 10px;">{{ contador }}</span>
-        <strong>{{ publi.title }}</strong><br />
-        <em>{{ publi.authors }}</em><br />
-        {{ publi.display }} {% if publi.year %}({{ publi.year }}){% endif %}<br/>
+      <div class="jumbotron">
+        <div class="well-sm">
+          <ul class="flex-container">
+            <li class="flex-item1">
+              {% if publi.image %}
+                <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="200%" style="float: left" />
+              {% endif %}
+            </li>
+            <li class="flex-item2">
+              <strong> {{ publi.title }}</strong> <br />
+              <em>{{ publi.authors }} </em><br />
+              {{ publi.display }} {% if publi.year %}({{publi.year}}){% endif %}<br/>
+              {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
+              {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
+              {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
+              {% if bibtest == true %} <a data-toggle="collapse" href="#{{publi.url}}2" class="btn-bib" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}2">BIB</a> {% endif %}
+              {% if publi.abstract %} <a data-toggle="collapse" href="#{{publi.url}}" class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}">ABSTRACT</a>{% endif %}
 
-        {% if publi.url %}
-          <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank">
-            <button class="btn-pdf">PDF</button>
-          </a>
-        {% endif %}
-        {% if publi.doi %}
-          <a href="http://dx.doi.org/{{ publi.doi }}" target="_blank">
-            <button class="btn-doi">DOI</button>
-          </a>
-        {% endif %}
-        {% if publi.arxiv %}
-          <a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank">
-            <button class="btn-arxiv">ARXIV</button>
-          </a>
-        {% endif %}
-        {% if bibtest %}
-          <a data-toggle="collapse" href="#{{ publi.url }}2" class="btn-bib" style="text-decoration:none; color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{ publi.url }}2">BIB</a>
-        {% endif %}
-        {% if publi.abstract %}
-          <a data-toggle="collapse" href="#{{ publi.url }}" class="btn-abstract" style="text-decoration:none; color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{ publi.url }}">ABSTRACT</a>
-        {% endif %}
+              {% if publi.abstract %}
+              <br/>
+              <div class="collapse" id="{{publi.url}}"><div class="well-abstract">
+                {{publi.abstract}}
+              </div></div>
+              {% endif %}
 
-        {% if publi.abstract %}
-          <br/>
-          <div class="collapse" id="{{ publi.url }}">
-            <div class="well-abstract">
-              {{ publi.abstract }}
-            </div>
-          </div>
-        {% endif %}
+              {% if bibtest == true %}
+              <div class="collapse" id="{{publi.url}}2"><div class="well-bib">
+                <iframe src='{{site.url}}{{site.baseurl}}/papers/{{publi.url}}.txt' scrolling='yes' width="100%" height="210" frameborder='0'></iframe>
+              </div></div>
+              {% endif %}
 
-        {% if bibtest %}
-          <div class="collapse" id="{{ publi.url }}2">
-            <div class="well-bib">
-              <iframe src="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.txt" scrolling="yes" width="100%" height="210" frameborder="0"></iframe>
-            </div>
-          </div>
-        {% endif %}
-      </li>
-    </ul>
-  </div>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-  {% assign contador = contador | minus: 1 %}
-
-  {% if forloop.last %}
-    </div>
-  {% endif %}
+    {% endif %}
+  {% endfor %}
 
 {% endfor %}
