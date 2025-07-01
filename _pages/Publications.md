@@ -27,7 +27,7 @@ For a complete list of publications, check
 
 
 {% for myyear in page.years %}
-[{{ myyear }}](#year-{{ myyear }})&nbsp;&nbsp;
+[{{ myyear }}](#year-{{ myyear }})&nbsp;
 {% endfor %}
 
 
