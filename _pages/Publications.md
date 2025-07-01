@@ -1,8 +1,8 @@
 ---
-title: "About"
+title: "Publications"
 layout: gridlay
 sitemap: false
-permalink: /about/
+permalink: /publications/
 years: [2023, 2024, 2025]
 ---
 
