@@ -1,4 +1,4 @@
-  - title: Asymptotic convergence for the dynamics of a Duffing-like oscillator under scaling analyses
+- title: Asymptotic convergence for the dynamics of a Duffing-like oscillator under scaling analyses
   authors: A. L. P. Livorati, A. P. Faber, and D. Borin
   url: Borin07
   # image: something.png
@@ -8,7 +8,7 @@
   doi: 10.1063/5.0233700
   # abstract: " "
 
-  - title: Hurst exponent: A method for characterizing dynamical traps
+- title: Hurst exponent: A method for characterizing dynamical traps
   authors: D. Borin
   url: Borin06
   # image: something.png
@@ -18,7 +18,7 @@
   doi: 10.1103/PhysRevE.110.064227
   # abstract: " "
 
-  - title: An investigation of escape and scaling properties of a billiard system
+- title: An investigation of escape and scaling properties of a billiard system
   authors: M. Rolim Sales, D. Borin, D. R. da Costa, J. D. Szezech Jr., and E. D. Leonel
   url: Borin05
   # image: something.png
@@ -28,7 +28,7 @@
   doi: 10.1063/5.0222215
   # abstract: " "
 
-  - title: Buzz pollination: A theoretical analysis via scaling invariance
+- title: Buzz pollination: A theoretical analysis via scaling invariance
   authors: D. Borin, V. L. G. de Brito, E. D. Leonel, and M. Hansen
   url: Borin04
   # image: something.png
@@ -38,7 +38,7 @@
   doi: 10.1103/PhysRevE.110.054201
   # abstract: " "
 
-  - title: Ratchet current and scaling properties in a nontwist mapping
+- title: Ratchet current and scaling properties in a nontwist mapping
   authors: M. Rolim Sales, D. Borin, L. C. de Souza, J. D. Szezech Jr., R. L. Viana, I. L. Caldas, and E. D. Leonel
   url: Borin03
   # image: something.png
@@ -48,7 +48,7 @@
   doi: 10.1016/j.chaos.2024.115614
   # abstract: " "
 
-  - title: Caputo fractional standard map: Scaling invariance analyses
+- title: Caputo fractional standard map: Scaling invariance analyses
   authors: D. Borin
   url: Borin02
   # image: something.png
@@ -58,7 +58,7 @@
   doi: 10.1016/j.chaos.2024.114597
   # abstract: " "
 
-  - title: An investigation of the survival probability for chaotic diffusion in a family of discrete Hamiltonian mappings
+- title: An investigation of the survival probability for chaotic diffusion in a family of discrete Hamiltonian mappings
   authors: D. Borin, A. L. P. Livoratti and E. D. Leonel
   url: Borin01
   # image: something.png
