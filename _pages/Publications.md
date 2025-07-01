@@ -29,6 +29,7 @@ For a complete list of publications, check
 <!-- {% for myyear in page.years %}[{{ myyear }}](#year-{{ myyear }}) {% endfor %} -->
 
 
+<div style="margin-bottom: -20px;"></div>
 
 <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.2em;">
   {% for myyear in page.years %}
