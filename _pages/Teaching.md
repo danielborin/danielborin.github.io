@@ -22,6 +22,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
     Introdução à Computação Científica (ICC) com Python
   </a>
 </h4>
+#### [Introdução à Computação Científica (ICC) com Python](https://danielborin.github.io/ICC)
 <h5>Introduction to Python for Scientific Computing</h5>
 <figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
 <a href="https://danielborin.github.io/ICC">
