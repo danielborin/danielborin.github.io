@@ -17,15 +17,19 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/Teaching/image_ICC.png') center/cover no-repeat; opacity: 0.5; z-index: -1; mix-blend-mode: multiply;"></div>
 
 <div class="col-md-12 col-sm-12" style="text-align:justify; overflow: hidden;">
-<a href="https://danielborin.github.io/ICC">
-  <h4>Introdução à Computação Científica (ICC) com Python</h4>
+<a href="https://danielborin.github.io/ICC" style="text-decoration: none;">
+  <h4 style="display: inline-block; cursor: pointer;">
+    Introdução à Computação Científica (ICC) com Python
+  </h4>
 </a>
 <h5>Introduction to Python for Scientific Computing</h5>
 <figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
-<a href="https://danielborin.github.io/ICC" target="_blank">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/Teaching/logo_ICC_alone.png" 
-       style="width: 100%; max-width: 400px; height: auto;" 
-       alt="ICC Logo"/>
+<a href="https://danielborin.github.io/ICC">
+  <img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_alone.png"
+       alt="ICC Logo"
+       style="width: 100%; max-width: 400px; height: auto; transition: transform 0.3s ease;"
+       onmouseover="this.style.transform='scale(0.95)'"
+       onmouseout="this.style.transform='scale(1)'"/>
 </a>
 </figure>
 <em>Movie</em><br>
