@@ -18,7 +18,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 <h4>Introdução à Computação Científica (ICC)</h4>
 <h5>Introduction to Computer Science</h5>
 <figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
-<img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_alone.jpg" style="width: 100%; max-width: 400px; height: auto;" alt="ICC Logo"/>
+<img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_alone.png" style="width: 100%; max-width: 400px; height: auto;" alt="ICC Logo"/>
 </figure>
 <em>Movie</em><br>
 <em>Summary:</em> A deaf girl, Shoko, is bullied by the popular Shoya. As Shoya continues to bully Shoko, the class turns its back on him. Shoko transfers and Shoya grows up as an outcast. Alone and depressed, the regretful Shoya finds Shoko to make amends.<br><br>
