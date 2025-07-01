@@ -99,7 +99,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
   <li>Limite <span style="font-weight: normal;">(Limits)</span></li>
   <li>Derivada de uma Função <span style="font-weight: normal;">(Derivative of a Function)</span></li>
   <li>Regra de L'Hospital <span style="font-weight: normal;">(L'Hospital's Rule)</span></li>
-  <li>Teoremas de Weierstrass, Valor Intermediário, Bolzano, Rolle e Valor Médio
+  <li>Teoremas de Weierstrass, Valor Intermediário, Bolzano, Rolle e Valor Médio <br>
     <span style="font-weight: normal;">(Weierstrass, Intermediate Value, Bolzano, Rolle and Mean Value Theorems)</span>
   </li>
   <li>Crescimento e Decrescimento de Funções <span style="font-weight: normal;">(Increasing and Decreasing Functions)</span></li>
