@@ -25,7 +25,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 <h5>Introduction to Python for Scientific Computing</h5>
 <figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
 <a href="https://danielborin.github.io/ICC" target="_blank">
-  <img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_alone.png"
+  <img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_wbg.png"
        alt="ICC Logo"
        style="width: 100%; max-width: 400px; height: auto; transition: transform 0.3s ease;"
        onmouseover="this.style.transform='scale(0.95)'"
@@ -38,6 +38,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
   <span style="font-size: 1.2em;">60 h</span>
 </div>
 
+<div style="margin-bottom: -10px;"></div>
 <!-- Título Sumário (Outline) -->
 <h7>Sumário <span style="font-weight: normal;">(Outline)</span></h7>
 
