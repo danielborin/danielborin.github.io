@@ -3,7 +3,7 @@ title: "Publications"
 layout: gridlay
 sitemap: false
 permalink: /publications/
-years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+years: [2023, 2024, 2025]
 ---
 
 {% assign total_pubs = site.data.publist | size %}
