@@ -17,10 +17,16 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/Teaching/image_ICC.png') center/cover no-repeat; opacity: 0.5; z-index: -1; mix-blend-mode: multiply;"></div>
 
 <div class="col-md-12 col-sm-12" style="text-align:justify; overflow: hidden;">
-<h4>Introdução à Computação Científica (ICC)</h4>
-<h5>Introduction to Computer Science</h5>
+<a href="https://danielborin.github.io/ICC">
+  <h4>Introdução à Computação Científica (ICC) com Python</h4>
+</a>
+<h5>Introduction to Python for Scientific Computing</h5>
 <figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
-<img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_alone.png" style="width: 100%; max-width: 400px; height: auto;" alt="ICC Logo"/>
+<a href="https://danielborin.github.io/ICC" target="_blank">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/Teaching/logo_ICC_alone.png" 
+       style="width: 100%; max-width: 400px; height: auto;" 
+       alt="ICC Logo"/>
+</a>
 </figure>
 <em>Movie</em><br>
 <em>Summary:</em> A deaf girl, Shoko, is bullied by the popular Shoya. As Shoya continues to bully Shoko, the class turns its back on him. Shoko transfers and Shoya grows up as an outcast. Alone and depressed, the regretful Shoya finds Shoko to make amends.<br><br>
