@@ -14,24 +14,6 @@ For a complete list of publications, check
 
 ---
 
-{% assign yeartest = true %}
-{% for publi in site.data.publist %}
-  {% if publi.year %}{% else %}
-    {% assign yeartest = false %}
-  {% endif %}
-{% endfor %}
-
-<ul style="list-style: none; padding: 0; margin: 0; font-size: 1.2em;">
-  {% for myyear in page.years %}
-    <li style="display: inline-block; width: 12.5%; padding: 6px 0; text-align: center;">
-      <a href="#year-{{ myyear }}" style="text-decoration: none;">{{ myyear }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-{% comment %}
-  Ordena a lista do mais novo para o mais antigo
-{% endcomment %}
 {% assign publist_sorted = site.data.publist | sort: "year" | reverse %}
 {% assign total_pubs = publist_sorted | size %}
 {% assign contador = total_pubs %}
@@ -41,7 +23,7 @@ For a complete list of publications, check
 
   {% if publi.year != last_year %}
     {% if forloop.index != 1 %}
-      </div> {# fecha o container do ano anterior #}
+      </div>
     {% endif %}
     <h2 id="year-{{ publi.year }}">{{ publi.year }}</h2>
     <div style="margin-bottom: 30px;">
@@ -116,7 +98,7 @@ For a complete list of publications, check
   {% assign contador = contador | minus: 1 %}
 
   {% if forloop.last %}
-    </div> {# fecha o último container de ano #}
+    </div>
   {% endif %}
-  
+
 {% endfor %}
