@@ -33,7 +33,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 </a>
 </figure>
 <!-- Ícone de relógio com texto -->
-<div style="display: flex; align-items: center; margin-bottom: 0.3em;">
+<div style="display: flex; align-items: center; margin-bottom: 0.1em;">
   <i class="fa fa-clock-o" style="font-size: 1.5em; margin-right: 10px;"></i>
   <span style="font-size: 1.2em;">60 h</span>
 </div>
@@ -50,10 +50,6 @@ These are some lecture notes from courses I have taught. The notes are in Portug
   <li>Scipy: Utilizando Métodos Númericos no Python <span style="font-weight: normal;">(Scipy: Using Numerical Methods in Python)</span></li>
 </ul>
 
-<em>Movie</em><br>
-<em>Summary:</em> A deaf girl, Shoko, is bullied by the popular Shoya. As Shoya continues to bully Shoko, the class turns its back on him. Shoko transfers and Shoya grows up as an outcast. Alone and depressed, the regretful Shoya finds Shoko to make amends.<br><br>
-<em>My Rating:</em> 10/10 <br>
-<em>My Thoughts:</em> This is easily my favorite anime of all time, movie or TV show. I believe it's the second anime I watched, and it was such a stunning experience watching it the first time. It's a beautiful emotionally-driven story and the characters have a lot of depth despite the short time that we get to see them. I enjoy rewatching this from time to time, and it hits me almost the same way as the first time each time I rewatch it.<br>
 </div>
 </div>
 
