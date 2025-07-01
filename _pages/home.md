@@ -32,19 +32,19 @@ permalink: /
 <ul style="list-style: none; padding-left: 0; font-size: 1.1em;">
   <li style="margin-bottom: 10px;">
     <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2026) PhD Physics, São Paulo State University (UNESP)
+    (2026) Ph.D. in Physics, São Paulo State University (UNESP)
   </li>
   <li style="margin-bottom: 10px;">
     <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2024) MS Mathematics, São Paulo State University (UNESP)
+    (2024) M.S. in Mathematics, São Paulo State University (UNESP)
   </li>
   <li style="margin-bottom: 10px;">
     <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2022) MS Physics, University of São Paulo (USP)
+    (2022) M.S. in Physics, University of São Paulo (USP)
   </li>
   <li style="margin-bottom: 10px;">
     <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2019) BS Physics, São Paulo State University (UNESP)
+    (2019) B.S. in Physics, São Paulo State University (UNESP)
   </li>
 </ul>
 
