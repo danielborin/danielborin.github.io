@@ -6,7 +6,7 @@ permalink: /publications/
 years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
 ---
 
-<br><br>
+<div style="margin-bottom: 20px;"></div>
 
 For a complete list of publications, check
 <a href="https://orcid.org/0000-0002-4098-7730"><button class="btn-bib"><i class="ai ai-orcid" aria-hidden="true"></i> ORCID </button></a>, or
