@@ -59,7 +59,7 @@ permalink: /
   <li style="margin-bottom: 6px;">Mechanism of transport and diffusion</li>
   <li style="margin-bottom: 6px;">Classical billiards</li>
   <li style="margin-bottom: 6px;">Complex system</li>
-  <li style="margin-bottom: 6px;">Ecological/Biological Models</li>
+  <li style="margin-bottom: 6px;">Biological/Ecological Models</li>
 </ul>
 
 
