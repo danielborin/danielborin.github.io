@@ -9,6 +9,8 @@ years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
 {% assign total_pubs = site.data.publist | size %}
 {% assign countdown = total_pubs %}
 
+{% assign me = "D. Borin" %}
+
 <div style="margin-bottom: 20px;"></div>
 
 For a complete list of publications, check
@@ -72,6 +74,9 @@ For a complete list of publications, check
 {% endfor %}
 {% endif %}
 
+{% assign highlighted_name = '<span style="color: #2a9fd6; font-weight: bold;">' | append: me | append: '</span>' %}
+{% assign highlighted_authors = publi.authors | replace: me, highlighted_name %}
+
 <div class="well-sm">
 <ul class="flex-container" style="list-style: none; padding-left: 0;">
 <!-- <li class="flex-item1">
@@ -83,13 +88,13 @@ For a complete list of publications, check
 <span style="position: absolute; left: 0; top: 0; font-weight:bold; font-size: 1.1em;">[{{ countdown }}]</span>
   
   <strong> {{ publi.title }}</strong> <br />
-  <em>{{ publi.authors }} </em><br />
+  <em>{{ highlighted_authors }}</em><br />
   {{ publi.display }} {% if publi.year %}({{publi.year}}){% endif %}<br/>
   {% if publi.url %}<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ publi.url }}.pdf" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
   {% if publi.doi %}<a href="http://dx.doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
-  {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
+  <!-- {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
   {% if bibtest == true %} <a data-toggle="collapse" href="#{{publi.url}}2" class="btn-bib" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}2">BIB</a> {% endif %}
-  {% if publi.abstract %} <a data-toggle="collapse" href="#{{publi.url}}" class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}">ABSTRACT</a>{% endif %}
+  {% if publi.abstract %} <a data-toggle="collapse" href="#{{publi.url}}" class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.url}}">ABSTRACT</a>{% endif %} -->
 
 {% if publi.abstract %}
 <br/>
