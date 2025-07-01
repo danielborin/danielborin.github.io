@@ -17,12 +17,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('{{site.url}}{{site.baseurl}}/images/Teaching/image_ICC.png') center/cover no-repeat; opacity: 0.5; z-index: -1; mix-blend-mode: multiply;"></div>
 
 <div class="col-md-12 col-sm-12" style="text-align:justify; overflow: hidden;">
-<h4>
-  <a href="https://danielborin.github.io/ICC" target="_blank">
-    Introdução à Computação Científica (ICC) com Python
-  </a>
-</h4>
-<h5>Introduction to Python for Scientific Computing</h5>
+
 <figure style="float: right; margin: 0 0 10px 20px; max-width: 20%;">
 <a href="https://danielborin.github.io/ICC" target="_blank">
   <img src="{{site.url}}{{site.baseurl}}/images/Teaching/logo_ICC_wbg.png"
@@ -32,6 +27,14 @@ These are some lecture notes from courses I have taught. The notes are in Portug
        onmouseout="this.style.transform='scale(1)'"/>
 </a>
 </figure>
+
+<h4>
+  <a href="https://danielborin.github.io/ICC" target="_blank">
+    Introdução à Computação Científica (ICC) com Python
+  </a>
+</h4>
+<h5>Introduction to Python for Scientific Computing</h5>
+
 <!-- Ícone de relógio com texto -->
 <div style="display: flex; align-items: center; margin-bottom: 0.1em;">
   <i class="fa fa-clock-o" style="font-size: 1.5em; margin-right: 10px;"></i>
