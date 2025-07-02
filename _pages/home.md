@@ -25,7 +25,7 @@ permalink: /
 <div style="margin-bottom: 20px;"></div>
     
 # Daniel Borin
-<!-- I'm Mats Esseldeurs, a PhD student at [KU Leuven](https://www.kuleuven.be/kuleuven/)'s [Institute of Astronomy](https://fys.kuleuven.be/ster), in the team of [Prof. Dr. Leen Decin](https://fys.kuleuven.be/ster/staff/senior-staff/leen-decin). My research lies at the intersection of math, physics, and computer science, where I explore some of the most complex phenomena in the universe. -->
+<!-- I'm Daniel Borin, a PhD student at [Unesp](https://www2.unesp.br)'s , in the team of [Prof. Dr. Edson Denis Leonel]([https://fys.kuleuven.be/ster/staff/senior-staff/leen-decin](https://igce.rc.unesp.br/#!/departamentos/fisica/edleonel/editaringles/home/)).  -->
 
 <div style="margin-bottom: 20px;"></div>
 
@@ -63,9 +63,15 @@ permalink: /
 </ul>
 
 
-<div style="position: fixed; bottom: 10px; right: 10px; z-index: 999;">
+<!-- <div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
   <a href="https://clustrmaps.com/site/1c6x0" title="ClustrMaps">
-    <img src="//www.clustrmaps.com/map_v2.png?d=FMBHN8fSr7B6mOW_6MOkdjM3gI2uVFqFPfEId3vuv8M&cl=ffffff" alt="ClustrMaps" style="max-width: 100px;">
+    <img src="//www.clustrmaps.com/map_v2.png?d=FMBHN8fSr7B6mOW_6MOkdjM3gI2uVFqFPfEId3vuv8M&cl=ffffff" alt="ClustrMaps" style="width: 140px;">
+  </a>
+</div> -->
+
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+  <a href="https://clustrmaps.com/site/1c6x0" title="ClustrMaps">
+    <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=FMBHN8fSr7B6mOW_6MOkdjM3gI2uVFqFPfEId3vuv8M&ct=ffffff&co=2d78ad&cmo=3acc3a&cmn=ff5353"></script>
   </a>
 </div>
 
