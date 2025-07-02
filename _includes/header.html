@@ -49,6 +49,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </ul>
     </div>
 
+<div style="display: inline-block; width: 1cm;"></div> <!-- Espaço de 2cm -->
+
 <!-- Chave seletora de idioma (Dropdown) -->
 <div class="ml-auto">
     <div class="dropdown">
@@ -68,7 +70,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 {% else %}
                     <!-- Corrigir plural de 'publicacoes' e evitar barra dupla -->
                     <li>
-                        <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl | remove: '/' }}{{ page.url | replace: '/inicio', '/' | replace: '/publicacoes', '/publication' | replace: '/ensino', '/teaching' }}">
+                        <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl | remove: '/' }}{{ page.url | replace: '/inicio', '/' | replace: '/publicacoes/', '/publication' | replace: '/ensino', '/teaching' }}">
                             🇺🇸 English
                         </a>
                     </li>
@@ -80,7 +82,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 {% else %}
                     <!-- Corrigir plural de 'publication' e evitar barra dupla -->
                     <li>
-                        <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl | remove: '/' }}{{ page.url | replace: '/index', '/inicio' | replace: '/publication', '/publicacoes' | replace: '/teaching', '/ensino' }}">
+                        <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl | remove: '/' }}{{ page.url | replace: '/index', '/inicio' | replace: '/publication', '/publicacoes/' | replace: '/teaching', '/ensino' }}">
                             🇧🇷 Português
                         </a>
                     </li>
