@@ -22,11 +22,20 @@ To add a new course, follow these steps:
 To add a new page:
 1. Create two `.md` files: one for the English version and one for the Portuguese version. Place them in the `_pages` folder.
 2. The Portuguese version must include `lang: pt` in its front matter.
-3. After creating the pages, edit the `header.html` file. Insert the English and Portuguese page names in the placeholder section:
-   - Find the comment `<!-- Insert here -->` and add the English and Portuguese page links, following the example of the existing `<a class=...><a/>` object.
-   - Also, edit the comments `<!-- Edit here 1 -->` and `<!-- Edit here 2 -->`. Replace `| replace: '/namept', '/nameenglish'` and `| replace: '/nameenglish', '/namept'`, respectively.
-   
-Now your new page should appear on the website!
+3. After creating the pages, edit the `header.html` file. Insert the English and Portuguese page names in the placeholder section `<!-- Insert here -->`, following the example below:
+     ```html
+     <a class="nav-item nav-link" href="{% if page.lang == 'pt' %}{{ site.url }}{{ site.baseurl }}/ensino{% else %}{{ site.url }}{{ site.baseurl }}/teaching{% endif %}">
+         {% if page.lang == "pt" %}
+             namepagept 
+         {% else %}
+             namepageenglish 
+         {% endif %}
+     </a>
+     ```
+
+   4. Also, edit the lines of code with `<!-- Edit here 1 -->` and `<!-- Edit here 2 -->`. Add the following at the end of the line content:
+      - `| replace: '/namept', '/nameenglish'` for `<!-- Edit here 1 -->`
+      - `| replace: '/nameenglish', '/namept'` for `<!-- Edit here 2 -->`.
 
 ## 4. Deploying the Changes to GitHub Pages
 
