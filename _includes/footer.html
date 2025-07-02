@@ -60,13 +60,37 @@
       <div class="row d-flex justify-content-center text-center">
         <!-- Colunas centralizadas -->
         <div class="col-sm-4">
-          <h5>Contact</h5>	
-          <p>{{ site.contact }}</p>
+          <h5>
+            {% if page.lang == "pt" %}
+              Contato
+            {% else %}
+              Contact
+            {% endif %}
+          </h5>	
+          <p>
+            {% if page.lang == "pt" %}
+              {{ site.contact_ptbr }}
+            {% else %}
+              {{ site.contact_en }}
+            {% endif %}
+          </p>
         </div>
 
         <div class="col-sm-6">
-          <h5>Affiliation</h5>	
-          <p>{{ site.location }}</p>
+          <h5>
+            {% if page.lang == "pt" %}
+              Afiliação
+            {% else %}
+              Affiliation
+            {% endif %}
+          </h5>	
+          <p>
+            {% if page.lang == "pt" %}
+              {{ site.location_ptbr }}
+            {% else %}
+              {{ site.location_en }}
+            {% endif %}
+          </p>
         </div>
       </div>
 
