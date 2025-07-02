@@ -33,19 +33,19 @@ permalink: /inicio/
 <ul style="list-style: none; padding-left: 0; font-size: 1.1em;">
   <li style="margin-bottom: 10px;">
     <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2026) Doutor em Física, São Paulo State University (UNESP)
+    (2026) Doutorado em Física, Universidade Estadual Paulista (UNESP)
   </li>
   <li style="margin-bottom: 10px;">
     <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2024) Mestre em Matemática, São Paulo State University (UNESP)
+    (2024) Mestrado em Matemática, Universidade Estadual Paulista (UNESP)
   </li>
   <li style="margin-bottom: 10px;">
     <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2022) M.S. in Physics, University of São Paulo (USP)
+    (2022) Mestrado em Física, Universidade de São Paulo (USP)
   </li>
   <li style="margin-bottom: 10px;">
     <i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>
-    (2019) B.S. in Physics, São Paulo State University (UNESP)
+    (2019) Bacharelado em Física, Universidade Estadual Paulista (UNESP)
   </li>
 </ul>
 
@@ -55,12 +55,12 @@ permalink: /inicio/
 ### Areas de Interesse
 
 <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-type: disc; padding-left: 20px; font-size: 1.05em;">
-  <li style="margin-bottom: 6px;">Nonlinear dynamics and chaos</li>
-  <li style="margin-bottom: 6px;">Hamiltonian systems</li>
-  <li style="margin-bottom: 6px;">Mechanism of transport and diffusion</li>
-  <li style="margin-bottom: 6px;">Classical billiards</li>
-  <li style="margin-bottom: 6px;">Complex system</li>
-  <li style="margin-bottom: 6px;">Biological/Ecological Models</li>
+  <li style="margin-bottom: 6px;">Dinâmica não linear e caos</li>
+  <li style="margin-bottom: 6px;">Sistemas hamiltonianos</li>
+  <li style="margin-bottom: 6px;">Mecanismo de transporte e difusão</li>
+  <li style="margin-bottom: 6px;">Bilhares clássicos</li>
+  <li style="margin-bottom: 6px;">Sistema complexo</li>
+  <li style="margin-bottom: 6px;">Modelos biológicos/ecológicos</li>
 </ul>
 
 
