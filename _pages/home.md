@@ -63,5 +63,11 @@ permalink: /
 </ul>
 
 
+<div style="position: fixed; bottom: 10px; right: 10px; z-index: 999;">
+  <a href="https://clustrmaps.com/site/1c6x0" title="ClustrMaps">
+    <img src="//www.clustrmaps.com/map_v2.png?d=FMBHN8fSr7B6mOW_6MOkdjM3gI2uVFqFPfEId3vuv8M&cl=ffffff" alt="ClustrMaps" style="max-width: 100px;">
+  </a>
+</div>
+
 
 </div>
