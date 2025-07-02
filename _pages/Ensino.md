@@ -10,7 +10,7 @@ permalink: /ensino/
 
 
 <div class="col-md-12 col-sm-12" style="text-align:justify">
-These are some lecture notes from courses I have taught. The notes are in Portuguese, as the courses were delivered in that language. While the material is not complete or fully polished, it may still be useful for students or anyone interested in the topics covered.
+Estas são algumas anotações de aula dos cursos que eu ministrei. As anotações estão em português, pois os cursos foram ministrados nesse idioma. Embora o material não esteja completo ou totalmente polido, pode ainda ser útil para estudantes ou qualquer pessoa interessada nos tópicos abordados.
 </div>
 
 
