@@ -66,7 +66,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 {% if page.url == "/" %}
                     <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}/">🇺🇸 English</a></li> <!-- Página inicial em inglês -->
                 {% else %}
-                    <!-- Substituir '/inicio' por '/index' e ajustar o caminho para inglês -->
+                    <!-- Substituir '/inicio' por '/' e corrigir o plural de publicações -->
                     <li>
                         <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/inicio', '/' | replace: '/publicacoes', '/publication' | replace: '/ensino', '/teaching' }}">
                             🇺🇸 English
