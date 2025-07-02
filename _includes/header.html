@@ -55,7 +55,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="ml-auto">
     <div class="dropdown">
         <!-- Mostrar o idioma atual -->
-        <button class="btn btn-outline-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             {% if page.lang == "pt" %}
                 🇧🇷 Português
             {% else %}
@@ -66,8 +66,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {% if page.lang == "pt" %}
                 <!-- Se está em português, link para a versão em inglês -->
                 {% if page.url == "/" %}
-<!--                     <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}/">🇺🇸 English</a></li> <!-- Página inicial em inglês --> -->
-                    <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}/"><span class="flag-icon flag-icon-usa"></span> 🇺🇸 English</a></li>
+                    <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}/">🇺🇸 English</a></li> <!-- Página inicial em inglês --> 
                 {% else %}
                     <!-- Substituir '/inicio' por '/index' e ajustar o caminho para inglês -->
                     <li>
@@ -79,13 +78,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {% else %}
                 <!-- Se está em inglês, link para a versão em português -->
                 {% if page.url == "/" %}
-<!--                     <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}/inicio">🇧🇷 Português</a></li> <!-- Página inicial em português --> -->
-                    <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}"><span class="flag-icon flag-icon-br"></span> 🇧🇷 Português</a></li>
+                     <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}/inicio">🇧🇷 Português</a></li> <!-- Página inicial em português --> 
                 {% else %}
                     <!-- Substituir '/index' por '/inicio', '/publication' por '/publicacoes' e '/teaching' por '/ensino' -->
                     <li>
                         <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/index', '/inicio' | replace: '/publication', '/publicacoe' | replace: '/teaching', '/ensino' }}">
-                            <span class="flag-icon flag-icon-br"></span> 🇧🇷 Português
+                            🇧🇷 Português
                         </a>
                     </li>
                 {% endif %}
