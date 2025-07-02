@@ -16,7 +16,7 @@
   year: 2024
   # arxiv: 2203.04515
   doi: 10.1103/PhysRevE.110.064227
-  # abstract: " "
+  abstract: "Dynamical trapping occurs when the duration of time spent in specific regions of phase space increases, often associated with stickiness around invariant islands during manifold crossings. This paper introduces the Hurst exponent as a tool to characterize the dynamics of a typical quasiintegrable Hamiltonian system with coexisting regular and chaotic regions. Beyond detecting chaotic orbits and sticky regions, applying a finite-time analysis reveals a multimodal distribution of the finite-time Hurst exponent, where each mode corresponds to motion around islands of different hierarchical levels. The advantage of the Hurst exponent method over other standard techniques lies in its ability to quickly indicate chaotic dynamical structures. It effectively distinguishes between quasiperiodic and chaotic orbits temporarily trapped in sticky domains using very short trajectories. Additionally, since it operates based on time series data, it facilitates the exploration of trapping effects in dynamic systems that lack well-defined laws, a common scenario in natural dynamics."
 
 - title: An investigation of escape and scaling properties of a billiard system
   authors: M. Rolim Sales, D. Borin, D. R. da Costa, J. D. Szezech Jr., and E. D. Leonel
