@@ -3,7 +3,7 @@ title: "Publicações"
 lang: pt
 layout: gridlay
 sitemap: false
-permalink: /publications/
+permalink: /publicacoes/
 years: [2023, 2024, 2025]
 ---
 
