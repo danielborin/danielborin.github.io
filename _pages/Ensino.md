@@ -34,7 +34,6 @@ These are some lecture notes from courses I have taught. The notes are in Portug
     Introdução à Computação Científica (ICC) com Python
   </a>
 </h4>
-<h5>Introduction to Python for Scientific Computing</h5>
 
 <!-- Ícone de relógio com texto -->
 <div style="display: flex; align-items: center; margin-bottom: 0.1em;">
@@ -48,11 +47,11 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 
 <!-- Lista de conteúdos -->
 <ul>
-  <li>Básico do Python <span style="font-weight: normal;">(Python Basics)</span></li>
-  <li>Arrays: Conhecendo o Numpy <span style="font-weight: normal;">(Arrays: Getting to Know Numpy)</span></li>
-  <li>Gerando Gráficos com o Matplotlib <span style="font-weight: normal;">(Creating Plots with Matplotlib)</span></li>
-  <li>Resolvendo Expressões Matemáticas Analíticamente com o Sympy <span style="font-weight: normal;">(Solving Math Expressions Analytically with Sympy)</span></li>
-  <li>Scipy: Utilizando Métodos Númericos no Python <span style="font-weight: normal;">(Scipy: Using Numerical Methods in Python)</span></li>
+  <li>Básico do Python </li>
+  <li>Arrays: Conhecendo o Numpy </li>
+  <li>Gerando Gráficos com o Matplotlib </li>
+  <li>Resolvendo Expressões Matemáticas Analíticamente com o Sympy </li>
+  <li>Scipy: Utilizando Métodos Númericos no Python </li>
 </ul>
 
 </div>
@@ -80,7 +79,6 @@ These are some lecture notes from courses I have taught. The notes are in Portug
     Cálculo I
   </a>
 </h4>
-<h5>Calculus I</h5>
 
 <!-- Ícone de relógio com texto -->
 <div style="display: flex; align-items: center; margin-bottom: 0.1em;">
@@ -94,19 +92,17 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 
 <!-- Lista de conteúdos -->
 <ul>
-  <li>Revisão de Matemática Básica <span style="font-weight: normal;">(Basic Math Review)</span></li>
-  <li>Conjuntos Numéricos, Intervalos, Inequações <span style="font-weight: normal;">(Number Sets, Intervals, Inequalities)</span></li>
-  <li>Estudo de Funções <span style="font-weight: normal;">(Study of Functions)</span></li>
-  <li>Limite <span style="font-weight: normal;">(Limits)</span></li>
-  <li>Derivada de uma Função <span style="font-weight: normal;">(Derivative of a Function)</span></li>
-  <li>Regra de L'Hospital <span style="font-weight: normal;">(L'Hospital's Rule)</span></li>
-  <li>Teoremas de Weierstrass, Valor Intermediário, Bolzano, Rolle e Valor Médio <br>
-    <span style="font-weight: normal;">(Weierstrass, Intermediate Value, Bolzano, Rolle and Mean Value Theorems)</span>
-  </li>
-  <li>Crescimento e Decrescimento de Funções <span style="font-weight: normal;">(Increasing and Decreasing Functions)</span></li>
-  <li>Concavidade e Ponto de Inflexão <span style="font-weight: normal;">(Concavity and Inflection Point)</span></li>
-  <li>Máximos, Mínimos e Pontos Críticos <span style="font-weight: normal;">(Maximums, Minimums, and Critical Points)</span></li>
-  <li>Problemas de Otimização <span style="font-weight: normal;">(Optimization Problems)</span></li>
+  <li>Revisão de Matemática Básica </li>
+  <li>Conjuntos Numéricos, Intervalos, Inequações </li>
+  <li>Estudo de Funções </li>
+  <li>Limite </li>
+  <li>Derivada de uma Função </span></li>
+  <li>Regra de L'Hospital </li>
+  <li>Teoremas de Weierstrass, Valor Intermediário, Bolzano, Rolle e Valor Médio </li>
+  <li>Crescimento e Decrescimento de Funções </li>
+  <li>Concavidade e Ponto de Inflexão </li>
+  <li>Máximos, Mínimos e Pontos Críticos </li>
+  <li>Problemas de Otimização </li>
 </ul>
 
 
