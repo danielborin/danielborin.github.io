@@ -1,6 +1,6 @@
 ---
 title: "Ensino"
-lang = pt
+lang: pt
 layout: gridlay
 sitemap: true
 permalink: /ensino/
