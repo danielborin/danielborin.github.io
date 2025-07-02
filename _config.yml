@@ -23,6 +23,14 @@ location: >
 contact: >
     You can reach me at:<br><a href="mailto:daniel.borin[at]unesp.br" target="_blank"><i class="fa fa-envelope fa-1x"></i> daniel.borin[at]unesp.br</a>
 
+location_ptbr: >
+    Universidade Estadual Paulista (UNESP)<br/>
+    Instituto de Geociências e Ciências Exatas, Departamento de Física,
+    CEP: 13506-900, Rio Claro, SP, Brasil
+
+contact_ptbr: >
+    Você pode entrar em contato comigo em:<br><a href="mailto:daniel.borin[at]unesp.br" target="_blank"><i class="fa fa-envelope fa-1x"></i> daniel.borin[at]unesp.br</a>
+
 # Pages shown in navbar
 nav_pages:
   # - name: About
@@ -63,7 +71,7 @@ plugins:
 
 scholar:
 
-  last_name: Esseldeurs
+  last_name: Borin
   first_name: [Borin, D.]
 
   style: citesty
