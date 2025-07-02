@@ -2,6 +2,8 @@
 
 This is the source file that generates the academic website for Daniel Borin. Below are some instructions to update the site when necessary.
 
+**Note:** There is a Portuguese version of this `README.md` file called `LEIAME.md`.
+
 ## 1. Updating the Publications Page
 
 When starting a new year, the first thing to do is go to the `Publication.md` and `Publicacoes.md` files located in the `_pages` folder. Edit the `years: [2023, 2024, ...]` list and add the new year.
@@ -25,3 +27,19 @@ To add a new page:
    - Also, edit the comments `<!-- Edit here 1 -->` and `<!-- Edit here 2 -->`. Replace `| replace: '/namept', '/nameenglish'` and `| replace: '/nameenglish', '/namept'`, respectively.
    
 Now your new page should appear on the website!
+
+## 4. Deploying the Changes to GitHub Pages
+
+After making any changes to the website, you need to deploy the site to GitHub Pages:
+
+1. Go to the **Actions** tab on GitHub.
+2. Click on **Deploy Jekyll site to Pages** in the left section.
+3. Then, on the right side, click on **Run workflow**.
+4. Click on the new **Run workflow** button (which will appear in green).
+5. Wait about 5 minutes for the action to complete.
+6. Check if the action was successful and open the page to verify the changes.
+
+Here is an image to illustrate the steps:
+![Deploy Steps](images/tutorial_action_deploy.png)
+
+Once these steps are done, the updated content should be visible on the live site!
