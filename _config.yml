@@ -1,6 +1,7 @@
 # Site settings
 title: Daniel Borin
 email: daniel.borin[at]unesp.br
+email_ptbr: daniel.borin[arroba]unesp.br
 description: Academic webpage of Daniel Borin
 baseurl: ""
 url: "https://danielborin.github.io"
