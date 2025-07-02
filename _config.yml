@@ -1,7 +1,6 @@
 # Site settings
 title: Daniel Borin
 email: daniel.borin[at]unesp.br
-email_ptbr: daniel.borin[arroba]unesp.br
 description: Academic webpage of Daniel Borin
 baseurl: ""
 url: "https://danielborin.github.io"
@@ -30,7 +29,7 @@ location_ptbr: >
     CEP: 13506-900, Rio Claro, SP, Brasil
 
 contact_ptbr: >
-    Você pode entrar em contato comigo em:<br><a href="mailto:daniel.borin[at]unesp.br" target="_blank"><i class="fa fa-envelope fa-1x"></i> daniel.borin[at]unesp.br</a>
+    Você pode entrar em contato comigo em:<br><a href="mailto:daniel.borin[arroba]unesp.br" target="_blank"><i class="fa fa-envelope fa-1x"></i> daniel.borin[arroba]unesp.br</a>
 
 # Pages shown in navbar
 nav_pages:
