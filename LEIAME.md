@@ -22,10 +22,20 @@ Para adicionar um novo curso, siga os seguintes passos:
 Para adicionar uma nova página:
 1. Crie dois arquivos `.md`: um para a versão em inglês e outro para a versão em português. Coloque-os na pasta `_pages`.
 2. A versão em português deve conter `lang: pt` na sua front matter.
-3. Após criar as páginas, edite o arquivo `header.html`. Insira os nomes das páginas em inglês e português na seção de comentários `<!-- Inserir aqui -->`, seguindo o modelo do objeto `<a class=...><a/>` existente.
-4. Também edite os comentários `<!-- Edite aqui 1 -->` e `<!-- Edite aqui 2 -->`. Substitua `| replace: '/namept', '/nameenglish'` e `| replace: '/nameenglish', '/namept'`, respectivamente.
+3. Após criar as páginas, edite o arquivo `header.html`. Insira os nomes das páginas em inglês e português na seção de comentários `<!-- Inserir aqui -->`, seguindo o exemplo abaixo:
+     ```html
+     <a class="nav-item nav-link" href="{% if page.lang == 'pt' %}{{ site.url }}{{ site.baseurl }}/ensino{% else %}{{ site.url }}{{ site.baseurl }}/teaching{% endif %}">
+         {% if page.lang == "pt" %}
+             namepagept 
+         {% else %}
+             namepageenglish 
+         {% endif %}
+     </a>
+     ```
 
-Agora sua nova página deve aparecer no site!
+   4. Também edite as linhas de código que tiverem `<!-- Edite aqui 1 -->` e `<!-- Edite aqui 2 -->` antes. Adicione no final do conteúdo da linha:
+      - `| replace: '/namept', '/nameenglish'` para `<!-- Edite aqui 1 -->`
+      - `| replace: '/nameenglish', '/namept'` para `<!-- Edite aqui 2 -->`.
 
 ## 4. Fazendo o Deploy das Mudanças no GitHub Pages
 
