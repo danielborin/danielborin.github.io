@@ -66,6 +66,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 {% if page.url == "/" %}
                     <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}/">🇺🇸 English</a></li> <!-- Página inicial -->
                 {% else %}
+                    <!-- Substituir '/inicio' por '/index' e ajustar o caminho para inglês -->
                     <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/inicio', '/index' | replace: '/publicacoes', '/publication' | replace: '/ensino', '/teaching' }}">🇺🇸 English</a></li>
                 {% endif %}
             {% else %}
@@ -73,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 {% if page.url == "/" %}
                     <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}/inicio">🇧🇷 Português</a></li> <!-- Página inicial -->
                 {% else %}
-                    <!-- Verifica se a URL é relativa à página em inglês -->
+                    <!-- Substituir '/index' por '/inicio' e ajustar o caminho para português -->
                     <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/index', '/inicio' | replace: '/publication', '/publicacoes' | replace: '/teaching', '/ensino' }}">🇧🇷 Português</a></li>
                 {% endif %}
             {% endif %}
