@@ -14,10 +14,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
+<!--             <a class="nav-item nav-link" href="{{ site.url }}{{ site.baseurl }}/">Home</a> -->
+            <a class="nav-item nav-link" href="{{ site.url }}{{ site.baseurl }}/">
+                {% if page.lang == "pt" %}
+                    Início
+                {% else %}
+                    Home
+                {% endif %}
+            </a>
           {% for page in site.nav_pages %}
            <li class="nav-item">
-            <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/{{ page.name | downcase}}">{{page.name}}</a>
+<!--             <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/{{ page.name | downcase}}">{{page.name}}</a> -->
+             <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/{{ page.name | downcase}}">
+                {% if page.lang == "pt" %}
+                    {% if page.name == "Publication" %}
+                        Publicações
+                    {% elsif page.name == "Teaching" %}
+                        Ensino
+                    {% else %}
+                        {{ page.name }}  <!-- Caso haja outras páginas, manter o nome em inglês. -->
+                    {% endif %}
+                {% else %}
+                    {{ page.name }}  <!-- Para inglês, manter o nome original -->
+                {% endif %}
+            </a>
            </li> 
           {% endfor %}
         </ul>
