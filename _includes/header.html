@@ -54,7 +54,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <ul class="navbar-nav ml-auto">
       {% for member in site.data.pi %}
         <div>
-        {% if member.email %} <a href="mailto:{{ lang == 'pt' ? member.email_ptbr : member.email }}" target="_blank"><i class="fa fa-envelope-square" style="font-size: 3em; color: white; text-shadow: 0 0 20px #303030;
+        {% if member.email %} <a href="mailto:{% if page.lang == 'pt' %}{{ site.email_ptbr }}{% else %}{{ site.email }}{% endif %}" target="_blank"><i class="fa fa-envelope-square" style="font-size: 3em; color: white; text-shadow: 0 0 20px #303030;
                                                                                      transition: all 0.2s ease;" onmouseover="this.style.filter='brightness(70%)'; this.style.transform='scale(0.95)'"
                                                                                      onmouseout="this.style.filter='none'; this.style.transform='scale(1)'"></i></a> {% endif %}
         {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square" style="font-size: 3em; color: cyan;"></i></a> {% endif %}
