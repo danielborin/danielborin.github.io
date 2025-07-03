@@ -43,7 +43,7 @@ Estas são algumas anotações de aula dos cursos que eu ministrei. As anotaçõ
 
 <div style="margin-bottom: -10px;"></div>
 <!-- Título Sumário (Outline) -->
-<h7>Sumário <span style="font-weight: normal;">(Outline)</span></h7>
+<h7>Sumário</h7>
 
 <!-- Lista de conteúdos -->
 <ul>
@@ -88,7 +88,7 @@ Estas são algumas anotações de aula dos cursos que eu ministrei. As anotaçõ
 
 <div style="margin-bottom: -10px;"></div>
 <!-- Título Sumário (Outline) -->
-<h7>Sumário <span style="font-weight: normal;">(Outline)</span></h7>
+<h7>Sumário</h7>
 
 <!-- Lista de conteúdos -->
 <ul>
