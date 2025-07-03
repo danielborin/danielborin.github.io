@@ -42,7 +42,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 
 <div style="margin-bottom: -10px;"></div>
 <!-- Título Sumário (Outline) -->
-<h7>Sumário <span style="font-weight: normal;">(Outline)</span></h7>
+<h7>Outline</h7>
 
 <!-- Lista de conteúdos -->
 <ul>
@@ -87,7 +87,7 @@ These are some lecture notes from courses I have taught. The notes are in Portug
 
 <div style="margin-bottom: -10px;"></div>
 <!-- Título Sumário (Outline) -->
-<h7>Sumário <span style="font-weight: normal;">(Outline)</span></h7>
+<h7>Outline</h7>
 
 <!-- Lista de conteúdos -->
 <ul>
