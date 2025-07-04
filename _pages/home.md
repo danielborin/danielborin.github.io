@@ -69,12 +69,10 @@ permalink: /
   </a>
 </div> -->
 
-<div style="position: relative;">
-  <div style="position: absolute; bottom: 10px; right: 10px; z-index: 999;">
-    <a href="https://clustrmaps.com/site/1c6x0" title="ClustrMaps">
-      <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=n&d=FMBHN8fSr7B6mOW_6MOkdjM3gI2uVFqFPfEId3vuv8M&ct=ffffff&co=2d78ad&cmo=3acc3a&cmn=ff5353"></script>
-    </a>
-  </div>
+<div style="text-align: right; margin-top: 40px;">
+  <a href="https://clustrmaps.com/site/1c6x0" title="ClustrMaps">
+    <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=n&d=FMBHN8fSr7B6mOW_6MOkdjM3gI2uVFqFPfEId3vuv8M&ct=ffffff&co=2d78ad&cmo=3acc3a&cmn=ff5353"></script>
+  </a>
 </div>
 
 
