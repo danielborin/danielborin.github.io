@@ -1,0 +1,1233 @@
+<!doctype html>
+
+<html lang="en" data-theme="auto">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Teaching · Daniel Borin</title>
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+
+  <!-- =====================================================
+       FONTS
+       ===================================================== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- =====================================================
+       ACADEMICONs
+       ===================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css"
+  >
+
+
+  <!-- =====================================================
+       FONT AWESOME
+       ===================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+
+  <!-- =====================================================
+       MAIN STYLESHEET
+       ===================================================== -->
+
+  <link rel="stylesheet" href="../styles.css">
+
+
+  <!-- =====================================================
+       TEACHING PAGE STYLES
+       These styles override styles.css only on this page.
+       ===================================================== -->
+
+  <style>
+
+    /* =====================================================
+       TEACHING INTRO
+       ===================================================== */
+
+    .teaching-intro {
+
+      margin-bottom: 20px;
+
+      text-align: justify;
+
+      font-size: 0.95em;
+    }
+
+
+    /* =====================================================
+       TEACHING CARDS
+       ===================================================== */
+
+    .teaching-card {
+
+      position: relative;
+
+      overflow: hidden;
+
+      z-index: 1;
+
+      margin: 0 0 30px 0;
+
+      padding: 30px;
+
+      border-radius: 6px;
+
+      min-height: 300px;
+    }
+
+
+    /* =====================================================
+       BACKGROUND IMAGE
+       Darkened
+       ===================================================== */
+
+    .teaching-card::before {
+
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background-position: center;
+
+      background-size: cover;
+
+      background-repeat: no-repeat;
+
+      opacity: 0.58;
+
+      z-index: -2;
+
+      mix-blend-mode: multiply;
+    }
+
+
+    .teaching-card.icc::before {
+
+      background-image:
+        url("../images/Teaching/image_ICC.png");
+    }
+
+
+    .teaching-card.calculus::before {
+
+      background-image:
+        url("../images/Teaching/calculus-on-blackboard.jpg");
+    }
+
+
+    /* =====================================================
+       DARK OVERLAY
+       ===================================================== */
+
+    .teaching-card::after {
+
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background: rgba(0, 0, 0, 0.6);
+
+      z-index: -1;
+    }
+
+
+    /* =====================================================
+       ROW
+       ===================================================== */
+
+    .teaching-row {
+
+      display: flex;
+
+      align-items: flex-start;
+
+      gap: 35px;
+
+      width: 100%;
+    }
+
+
+    /* =====================================================
+       LEFT: IMAGE / LOGO
+       ===================================================== */
+
+    .teaching-image-column {
+
+      flex: 0 0 25%;
+
+      max-width: 25%;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: flex-start;
+    }
+
+
+    .teaching-image-column figure {
+
+      margin: 0;
+
+      width: 100%;
+    }
+
+
+    .teaching-image-column img {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 400px;
+
+      height: auto;
+
+      margin: 0 auto;
+
+      transition:
+        transform 0.3s ease;
+    }
+
+
+    .teaching-image-column a:hover img {
+
+      transform: scale(0.95);
+    }
+
+
+    /* =====================================================
+       RIGHT: TEXT
+       ===================================================== */
+
+    .teaching-text-column {
+
+      flex: 1;
+
+      min-width: 0;
+
+      text-align: justify;
+
+      font-size: 0.95em;
+    }
+
+
+    /* =====================================================
+       COURSE TITLE
+       ===================================================== */
+
+    .teaching-text-column h4 {
+
+      margin-top: 0;
+
+      margin-bottom: 12px;
+
+      font-family:
+        'Fraunces',
+        Georgia,
+        serif;
+
+      font-size: 1.25rem;
+
+      font-weight: 500;
+
+      line-height: 1.3;
+
+      /*
+       * Fixed neon-blue color.
+       * This does NOT change on hover.
+       */
+
+      color: var(--accent-bright) !important;
+
+      text-shadow:
+        0 0 8px
+        color-mix(
+          in srgb,
+          var(--accent-bright) 45%,
+          transparent
+        ),
+        0 0 18px
+        color-mix(
+          in srgb,
+          var(--accent) 25%,
+          transparent
+        );
+    }
+
+
+    /* =====================================================
+       COURSE TITLE LINK
+       
+       The title remains a real link, but:
+       - stays neon blue
+       - keeps the same color on hover
+       - has a normal underline
+       - does not inherit the global hover glow
+       ===================================================== */
+
+      .teaching-text-column h4 a {
+
+        color: var(--accent-bright) !important;
+
+        text-decoration: none;
+
+        text-decoration-thickness: 1px;
+
+        text-underline-offset: 3px;
+
+        transition:
+          text-decoration 0.2s ease;
+
+        text-shadow:
+          0 0 8px
+          color-mix(
+            in srgb,
+            var(--accent-bright) 45%,
+            transparent
+          ),
+          0 0 18px
+          color-mix(
+            in srgb,
+            var(--accent) 25%,
+            transparent
+          );
+      }
+
+
+      /* =====================================================
+        COURSE TITLE LINK — HOVER
+        ===================================================== */
+
+      .teaching-text-column h4 a:hover {
+
+        color: var(--accent-bright) !important;
+
+        text-decoration: underline;
+
+        text-decoration-thickness: 1px;
+
+        text-underline-offset: 3px;
+
+        text-shadow:
+          0 0 8px
+          color-mix(
+            in srgb,
+            var(--accent-bright) 45%,
+            transparent
+          ),
+          0 0 18px
+          color-mix(
+            in srgb,
+            var(--accent) 25%,
+            transparent
+          );
+      }
+
+
+    /* =====================================================
+       TEACHING HOURS
+       ===================================================== */
+
+    .teaching-hours {
+
+      display: flex;
+
+      align-items: center;
+
+      margin-bottom: 8px;
+
+      font-size: 1.05em;
+
+      color: var(--ink);
+    }
+
+
+    .clock-icon {
+
+      margin-right: 10px;
+
+      font-size: 1.35em;
+
+      line-height: 1;
+
+      color: var(--accent-bright);
+
+      text-shadow:
+        0 0 7px
+        color-mix(
+          in srgb,
+          var(--accent-bright) 55%,
+          transparent
+        );
+    }
+
+
+    /* =====================================================
+       OUTLINE
+       ===================================================== */
+
+    .outline-title {
+
+      display: block;
+
+      margin: 8px 0 4px;
+
+      font-size: 0.95em;
+
+      font-weight: 500;
+
+      color: var(--ink);
+    }
+
+
+    .outline-list {
+
+      margin-top: 0;
+
+      padding-left: 25px;
+
+      font-size: 0.95em;
+    }
+
+
+    .outline-list li {
+
+      margin-bottom: 4px;
+    }
+
+
+    /* =====================================================
+       RESPONSIVE — MOBILE
+       ===================================================== */
+
+    @media (max-width: 767px) {
+
+      .teaching-card {
+
+        padding: 20px;
+      }
+
+
+      .teaching-row {
+
+        flex-direction: column;
+
+        gap: 20px;
+      }
+
+
+      .teaching-image-column {
+
+        flex: none;
+
+        width: 100%;
+
+        max-width: 100%;
+      }
+
+
+      .teaching-image-column figure {
+
+        text-align: center;
+      }
+
+
+      .teaching-image-column img {
+
+        width: 50%;
+
+        max-width: 250px;
+      }
+
+
+      .teaching-text-column {
+
+        width: 100%;
+
+        text-align: justify;
+      }
+
+
+      .teaching-text-column h4 {
+
+        font-size: 1.15rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
+  <header class="site">
+
+    <div class="bar">
+
+
+      <!-- =================================================
+           BRAND
+           ================================================= -->
+
+      <a
+        class="brand"
+        href="../"
+      >
+
+        Daniel Borin
+
+      </a>
+
+
+      <!-- =================================================
+           PRIMARY NAVIGATION
+           ================================================= -->
+
+      <nav
+        class="primary"
+        aria-label="Main navigation"
+      >
+
+        <ul>
+
+          <li>
+
+            <a href="../">
+
+              Home
+
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a href="../publications/">
+
+              Publications
+
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a
+              href="./"
+              aria-current="page"
+            >
+
+              Teaching
+
+            </a>
+
+          </li>
+
+
+          <!--
+          <li>
+
+            <a href="contact.html">
+
+              Contact
+
+            </a>
+
+          </li>
+          -->
+
+        </ul>
+
+      </nav>
+
+
+      <!-- =================================================
+           ACADEMIC PROFILES
+           ================================================= -->
+
+      <div
+        class="academic-profiles"
+        aria-label="Academic profiles"
+      >
+
+
+        <!-- CV -->
+
+        <a
+          href="../CV_DB.pdf"
+          class="academic-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Curriculum Vitae"
+          title="Curriculum Vitae"
+        >
+
+          <i class="ai ai-cv"></i>
+
+        </a>
+
+
+        <!-- ORCID -->
+
+        <a
+          href="https://orcid.org/0000-0002-4098-7730"
+          class="academic-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="ORCID"
+          title="ORCID"
+        >
+
+          <i class="ai ai-orcid"></i>
+
+        </a>
+
+
+        <!-- GOOGLE SCHOLAR -->
+
+        <a
+          href="https://scholar.google.com/citations?user=qa0TdZwAAAAJ&hl=pt-BR&oi=ao"
+          class="academic-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Google Scholar"
+          title="Google Scholar"
+        >
+
+          <i class="ai ai-google-scholar"></i>
+
+        </a>
+
+
+        <!-- ARXIV -->
+
+        <a
+          href="https://arxiv.org/search/?searchtype=author&query=Borin%2C+D"
+          class="academic-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="arXiv"
+          title="arXiv"
+        >
+
+          <i class="ai ai-arxiv"></i>
+
+        </a>
+
+
+        <!-- RESEARCHGATE -->
+
+        <a
+          href="https://www.researchgate.net/profile/Daniel-Borin"
+          class="academic-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="ResearchGate"
+          title="ResearchGate"
+        >
+
+          <i class="fa-brands fa-researchgate"></i>
+
+        </a>
+
+
+        <!-- LATTES -->
+
+        <a
+          href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K8627212P2"
+          class="academic-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Currículo Lattes"
+          title="Currículo Lattes"
+        >
+
+          <i class="ai ai-lattes"></i>
+
+        </a>
+
+
+        <!-- GITHUB -->
+
+        <a
+          href="https://github.com/danielborin"
+          class="academic-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          title="GitHub"
+        >
+
+          <i class="fa-brands fa-github"></i>
+
+        </a>
+
+
+        <!-- LINKEDIN -->
+
+        <a
+          href="https://br.linkedin.com/in/daniel-borin"
+          class="academic-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          title="LinkedIn"
+        >
+
+          <i class="fa-brands fa-linkedin-in"></i>
+
+        </a>
+
+
+        <!-- EMAIL -->
+
+        <a
+          href="mailto:daniel.borin@unesp.br"
+          class="academic-profile"
+          aria-label="Email"
+          title="Email"
+        >
+
+          <i class="fa-solid fa-envelope"></i>
+
+        </a>
+
+      </div>
+
+
+      <!-- =================================================
+           CONTROLS
+           ================================================= -->
+
+      <div class="controls">
+
+        <div class="language-switcher">
+
+          <a href="./"
+            class="language-option active"
+            aria-label="English">
+            EN
+          </a>
+
+          <span class="language-divider">|</span>
+
+          <a href="../pt/ensino/"
+            class="language-option"
+            aria-label="Português">
+            PT
+          </a>
+
+        </div>
+
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Toggle theme"
+          title="Toggle light/dark theme"
+        >
+
+          <i
+            class="fa-solid fa-sun theme-sun"
+            aria-hidden="true"
+          ></i>
+
+          <i
+            class="fa-solid fa-moon theme-moon"
+            aria-hidden="true"
+          ></i>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       MAIN
+       ===================================================== -->
+
+  <main>
+
+
+    <div class="page-head">
+
+      <h1>
+
+        Teaching
+
+      </h1>
+
+
+      <div class="teaching-intro">
+
+        These are some lecture notes from courses I have taught.
+        The notes are in Portuguese, as the courses were delivered
+        in that language. While the material is not complete or
+        fully polished, it may still be useful for students or
+        anyone interested in the topics covered.
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         INTRODUCTION TO PYTHON FOR SCIENTIFIC COMPUTING
+         ===================================================== -->
+
+    <section class="teaching-card icc">
+
+
+      <div class="teaching-row">
+
+
+        <!-- =================================================
+             LEFT: COURSE IMAGE
+             ================================================= -->
+
+        <div class="teaching-image-column">
+
+          <figure>
+
+            <a
+              href="https://danielborin.github.io/ICC"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Introduction to Python for Scientific Computing course page"
+            >
+
+              <img
+                src="../images/Teaching/logo_ICC_wbg.png"
+                alt="ICC Logo"
+              >
+
+            </a>
+
+          </figure>
+
+        </div>
+
+
+        <!-- =================================================
+             RIGHT: COURSE TEXT
+             ================================================= -->
+
+        <div class="teaching-text-column">
+
+
+          <h4>
+
+            <a
+              href="https://danielborin.github.io/ICC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              Introduction to Python for Scientific Computing
+
+            </a>
+
+          </h4>
+
+
+          <div class="teaching-hours">
+
+            <i
+              class="fa-solid fa-clock clock-icon"
+              aria-hidden="true"
+            ></i>
+
+            <span>
+
+              60 h
+
+            </span>
+
+          </div>
+
+
+          <span class="outline-title">
+
+            Outline
+
+          </span>
+
+
+          <ul class="outline-list">
+
+            <li>
+
+              Python Basics
+
+            </li>
+
+            <li>
+
+              Arrays: Getting to Know Numpy
+
+            </li>
+
+            <li>
+
+              Creating Plots with Matplotlib
+
+            </li>
+
+            <li>
+
+              Solving Math Expressions Analytically with Sympy
+
+            </li>
+
+            <li>
+
+              Scipy: Using Numerical Methods in Python
+
+            </li>
+
+          </ul>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CALCULUS I
+         ===================================================== -->
+
+    <section class="teaching-card calculus">
+
+
+      <div class="teaching-row">
+
+
+        <!-- =================================================
+             LEFT: COURSE IMAGE
+             ================================================= -->
+
+        <div class="teaching-image-column">
+
+          <figure>
+
+            <a
+              href="../lecture_notes/Calculo%201%20-%20NotaAula%20-%20Prof%20Daniel%20Borin.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Calculus I lecture notes"
+            >
+
+              <img
+                src="../images/Teaching/calculus_logo.png"
+                alt="Calculus I Logo"
+              >
+
+            </a>
+
+          </figure>
+
+        </div>
+
+
+        <!-- =================================================
+             RIGHT: COURSE TEXT
+             ================================================= -->
+
+        <div class="teaching-text-column">
+
+
+          <h4>
+
+            <a
+              href="../lecture_notes/Calculo%201%20-%20NotaAula%20-%20Prof%20Daniel%20Borin.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              Calculus I
+
+            </a>
+
+          </h4>
+
+
+          <div class="teaching-hours">
+
+            <i
+              class="fa-solid fa-clock clock-icon"
+              aria-hidden="true"
+            ></i>
+
+            <span>
+
+              60 h
+
+            </span>
+
+          </div>
+
+
+          <span class="outline-title">
+
+            Outline
+
+          </span>
+
+
+          <ul class="outline-list">
+
+            <li>
+
+              Basic Math Review
+
+            </li>
+
+            <li>
+
+              Number Sets, Intervals, Inequalities
+
+            </li>
+
+            <li>
+
+              Study of Functions
+
+            </li>
+
+            <li>
+
+              Limits
+
+            </li>
+
+            <li>
+
+              Derivative of a Function
+
+            </li>
+
+            <li>
+
+              L'Hospital's Rule
+
+            </li>
+
+            <li>
+
+              Weierstrass, Intermediate Value, Bolzano,
+              Rolle and Mean Value Theorems
+
+            </li>
+
+            <li>
+
+              Increasing and Decreasing Functions
+
+            </li>
+
+            <li>
+
+              Concavity and Inflection Point
+
+            </li>
+
+            <li>
+
+              Maximums, Minimums, and Critical Points
+
+            </li>
+
+            <li>
+
+              Optimization Problems
+
+            </li>
+
+          </ul>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="site">
+
+    <div
+      class="inner"
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+      "
+    >
+
+
+      <!-- =================================================
+           AFFILIATION
+           ================================================= -->
+
+      <div>
+
+        <p>
+
+          Daniel Borin<br />
+
+          São Paulo State University (UNESP)<br />
+
+          Institute of Geosciences and Exact Sciences,
+          Department of Physics<br />
+
+          Rio Claro, SP, Brazil
+
+        </p>
+
+
+        <!-- <p>
+
+          <a
+            href="mailto:daniel.borin@unesp.br"
+            class="mono"
+          >
+
+            daniel.borin[at]unesp.br
+
+          </a>
+
+        </p> -->
+
+        <p>
+          
+          <a
+            href="mailto:daniel.borin@unesp.br"
+            class="brand"
+            style="font-size: 16px;"
+          >
+            daniel.borin[at]unesp.br
+          </a>
+
+        </p>
+
+
+        <p class="copyright">
+
+          © Daniel Borin
+
+          <span id="year"></span>
+
+        </p>
+
+      </div>
+
+
+      <!-- =================================================
+           VISITOR MAP
+           ================================================= -->
+
+      <div class="col-sm-4">
+
+        <a
+          href="https://mapmyvisitors.com/web/1c5ku"
+          title="Visit tracker"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <img
+            src="https://mapmyvisitors.com/map.png?cl=ffffff&w=250&t=n&d=bLUiGr2VqTFQNU7Gsswj3sRuRdwnSzBIXB2hbdWzLGo&co=2d78ad&ct=ffffff"
+            alt="Visitor map"
+            style="
+              display: block;
+              width: 250px;
+              max-width: 250px;
+              height: auto;
+              border-radius: 8px;
+            "
+          >
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================================
+       BASIC SCRIPTS
+       ===================================================== -->
+
+  <script>
+
+    document.getElementById('year').textContent =
+      new Date().getFullYear();
+
+  </script>
+
+  <!-- =====================================================
+     THEME
+     ===================================================== -->
+
+  <script src="../theme.js"></script>
+
+
+</body>
+
+</html>
