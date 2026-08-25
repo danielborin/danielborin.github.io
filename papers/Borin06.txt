@@ -1,0 +1,14 @@
+@article{PhysRevE.110.064227,
+  title = {Hurst exponent: A method for characterizing dynamical traps},
+  author = {Borin, Daniel},
+  journal = {Phys. Rev. E},
+  volume = {110},
+  issue = {6},
+  pages = {064227},
+  numpages = {12},
+  year = {2024},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevE.110.064227},
+  url = {https://link.aps.org/doi/10.1103/PhysRevE.110.064227}
+}
