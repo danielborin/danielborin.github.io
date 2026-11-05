@@ -1,0 +1,4 @@
+# Old address. Crawling stays allowed so Google can see the redirects
+# to https://danielborin.com/ and move the pages to the new address.
+User-agent: *
+Allow: /
