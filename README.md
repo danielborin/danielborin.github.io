@@ -1,6 +1,6 @@
 # danielborin.github.io (old address)
 
-The website moved to **https://danielborin.com/** (repository `danielborin/danielborin.com`).
+The website moved to **https://danielborin.com/**.
 
 This repository only forwards visitors and search engines from the old address
 `https://danielborin.github.io/` to the same page on the new domain.
